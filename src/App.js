@@ -1,14 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
+import Home from './components/Navbar/pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
-import Consulting from './components/pages/Consulting';
+import Services from './components/Navbar/pages/Services';
+import Products from './components/Navbar/pages/Products';
+import ContactUs from './components/Navbar/pages/ContactUs';
+import SignUp from './components/Navbar/pages/SignUp';
+import Marketing from './components/Navbar/pages/Marketing';
+import Consulting from './components/Navbar/pages/Consulting';
 
 function App() {
   return (
