@@ -1,10 +1,13 @@
+import React from 'react'
 import './App.css';
+import Navbar from './components/Navbar/Navbar.js'
+import { BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <h1>Yolo</h1>
-    </>
+    <Router>
+      <Navbar/>
+    </Router>
   );
 }
 
