@@ -12,6 +12,22 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const onMouseEnter = () =>{
+    if(window.innerWidth < 960){
+        setDropdown(false);
+    }else{
+        setDropdown(true);
+    }
+  }
+
+  const onMouseLeave = () =>{
+    if(window.innerWidth < 960){
+        setDropdown(false);
+    }else{
+        setDropdown(false);
+    }
+  }
+
   return (
     <>
       <nav className='navbar'>
@@ -23,7 +39,7 @@ function Navbar() {
 
         {/* Toggle button  */}
         <div className='menu-icon' onClick={handleClick}>
-          <i>{click ? <FaTimes /> : <FaBars />}</i>
+          <i>{click ? <FaTimes className='fa-times'/> : <FaBars className='fa-bars'/>}</i>
         </div>
 
         {/* Navbar items  */}
@@ -32,7 +48,7 @@ function Navbar() {
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
             </li>
 
-            <li className='nav-item'>
+            <li className='nav-item' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>Services <i><FaCaretDown/></i></Link>
                 {dropdown && <Dropdown/>}
             </li>
