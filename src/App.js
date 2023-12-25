@@ -1,28 +1,28 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
 import './App.css';
-import Navbar from './components/Navbar/Navbar.js'
-import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-
-import Consulting from './components/Navbar/pages/Consulting.js';
-import Services from './components/Navbar/pages/Services.js';
-import Home from './components/Navbar/pages/Home.js';
-import Products from './components/Navbar/pages/Products.js';
-import Marketing from './components/Navbar/pages/Marketing.js';
-import Contactus from './components/Navbar/pages/Contactus.js';
+import Home from './components/pages/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Services from './components/pages/Services';
+import Products from './components/pages/Products';
+import ContactUs from './components/pages/ContactUs';
+import SignUp from './components/pages/SignUp';
+import Marketing from './components/pages/Marketing';
+import Consulting from './components/pages/Consulting';
 
 function App() {
   return (
     <Router>
-      <Navbar/>
-
-      <Routes>
-         <Route path='/' Component={Home}/>
-         <Route path='/services' Component={Services}/>
-         <Route path='/contact-us' Component={Contactus}/>
-         <Route path='/marketing' Component={Marketing}/>
-         <Route path='/products' Component={Products}/>
-         <Route path='/consulting' Component={Consulting}/>
-      </Routes>
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/services' component={Services} />
+        <Route path='/products' component={Products} />
+        <Route path='/contact-us' component={ContactUs} />
+        <Route path='/sign-up' component={SignUp} />
+        <Route path='/marketing' component={Marketing} />
+        <Route path='/consulting' component={Consulting} />
+      </Switch>
     </Router>
   );
 }
