@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Accordiondata } from './Accordiondata';
 import {IconContext} from 'react-icons';
 import {FiPlus,FiMinus} from 'react-icons/fi';
@@ -18,6 +18,7 @@ const Container = styled.div`
     position : absolute;
     top : 30%;
     box-shadow : 2px 10px 35px 1px rgba(153,153,153,0.3);
+    width : 100%;
 `;
 
 const Wrap = styled.div`
@@ -32,11 +33,43 @@ const Wrap = styled.div`
 
     h1{
         padding : 2rem;
-        font-size : 2rem;
+        font-size : 24px;
+    }
+
+    span{
+        margin-right : 1.5rem;
     }
 `;
 
+const Dropdown = styled.div`
+    background : #1c1c1c;
+    color : #00ffb9;
+    width : 100%;
+    height : 100px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    border-bottom : 1px solid #00ffb9;
+    border-top : 1px solid #00ffb9;
+
+    p{
+        font-size : 20px;
+    }
+`;
+
+
 const Accordion = () => {
+
+    const [clicked,setClicked] = useState(false);
+
+    const toggle = index =>{
+        if(clicked === index){
+            return setClicked(null);
+        }
+        setClicked(index)
+    }
+
   return (
     <IconContext.Provider value={{color : '#00FFB9',size : '25px'}}>
         <AccordianSection>
@@ -45,11 +78,20 @@ const Accordion = () => {
                     Accordiondata.map((item,index)=>{
                         return (
                             <>
-                                <Wrap>
+                                <Wrap onClick={()=>toggle(index)} key={index}>
                                     <h1>{item.question}</h1>
-                                    <span></span>
+                                    <span>
+                                        {
+                                            clicked === index? <FiMinus/>:<FiPlus/>
+                                        }
+                                    </span>
                                 </Wrap>
-                                <p>{item.answer}</p>
+                                
+                                {
+                                    clicked === index ? (<Dropdown>
+                                        <p>{item.answer}</p>
+                                    </Dropdown>):null
+                                }
                             </>
                         );
                     })
