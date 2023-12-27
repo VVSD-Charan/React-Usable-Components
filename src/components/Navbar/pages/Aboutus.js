@@ -15,9 +15,11 @@ const Aboutus = () => {
                             About us
                         </h2>
 
-                        <p className='section-subtitle'>
-                            {aboutus_content}
-                        </p>
+                        <div className='div-subtitle'>
+                            <p className='section-subtitle'>
+                                {aboutus_content}
+                            </p>
+                        </div>
                     </div>
 
                     {/* Cards layout  */}

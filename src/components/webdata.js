@@ -1,4 +1,4 @@
-export const aboutus_content = "This is the content";
+export const aboutus_content = "We began our company in Telangana, Hyderabad, aiming to greatly benefit our customers by offering a complete platform for all essential services and resources needed to start a new business. Our goal is to simplify the process by providing a one-stop solution for business growth, including services such as generating business ideas, managing finances, handling documentation, registration, legal services, and accessing government business loans, all in one place. This approach aims to enhance efficiency and accessibility, potentially boosting the success of aspiring entrepreneurs. Moreover, by fostering and supporting entrepreneurship, our company seeks to contribute to economic growth and job creation, ultimately benefiting society as a whole.";
 
 export const whyus = [
     {

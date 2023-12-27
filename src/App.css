@@ -90,6 +90,16 @@
   padding: 70px 0;
 }
 
+.section-title{
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .team-item{
   background: #f4f5f6;
   text-align: center;
@@ -121,6 +131,14 @@
 
 .section-subtitle{
   white-space: pre-line;
+  text-align: center;
+  font-size: 20px;
+}
+
+.div-subtitle{
+  margin: auto;
+  width: 80%;
+  margin-top: 20px;
 }
 
 .team-item:hover h3{
