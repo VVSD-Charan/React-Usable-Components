@@ -32,7 +32,7 @@ const Wrap = styled.div`
     cursor : pointer;
 
     h1{
-        padding : 2rem;
+        padding : 17px;
         font-size : 24px;
     }
 
