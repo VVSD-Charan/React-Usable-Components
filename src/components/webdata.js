@@ -13,12 +13,12 @@ export const whyus = [
     },
     {
         title : "Business setup",
-        image : "",
+        image : "https://endzonescore.com/wp-content/uploads/2020/06/9-Best-Business-Setup-Companies-in-Dubai.jpg",
         description : "All the requirements of the project like machinary, infrastructure,raw materials, products, distributions ..etc are directly interconnected to our company . So that it is easy to estimate the project cost and make faster collaborations in between the parties.this will give the trust to the lender banks or nbfc."
     },
     {
         title : "Multiple lenders",
-        image : "",
+        image : "https://www.advisoryexcellence.com/wp-content/uploads/2022/02/CASH-LOAN-PHOTO.jpg",
         description : "We have the strong relationships with the multiple public banks, private banks,nbfc,and other credit societies.This will give the strong funding option for the customer and all the services offered by lono will definitely make it easy for the lenders to process out the  process for credit"
     }
 ]

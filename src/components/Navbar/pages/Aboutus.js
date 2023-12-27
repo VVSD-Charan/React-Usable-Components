@@ -2,7 +2,6 @@ import React from 'react'
 import '../../../App.css'
 import { aboutus_content, whyus } from '../../webdata';
 
-
 const Aboutus = () => {
 
     return (
@@ -22,10 +21,11 @@ const Aboutus = () => {
                     </div>
 
                     {/* Cards layout  */}
+                    <div className='container'>
                     {
                         whyus.map((item, index) => {
                             return (
-                                <div className='col-sm-6 col-md-4'>
+                                <div className='card'>
                                     <div className='team-item' key={index}>
                                         <img src={item.image} alt={item.title} className='team-img' />
                                         <h3>{item.title}</h3>
@@ -37,6 +37,7 @@ const Aboutus = () => {
                             )
                         })
                     }
+                    </div>
                 </div>
             </div>
         </section>
