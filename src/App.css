@@ -10,8 +10,9 @@
 .products,
 .contact-us,
 .sign-up,
-.marketing,
-.consulting {
+.business,
+.loans,
+.aboutus {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -37,10 +38,10 @@
   font-size: 100px;
 }
 
-.products {
-  background: blueviolet;
+.aboutus {
+  background: pink;
   background-position: center;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
@@ -64,7 +65,7 @@
   font-size: 100px;
 }
 
-.marketing {
+.business {
   background : green;
   background-position: center;
   background-size: cover;
@@ -73,7 +74,7 @@
   font-size: 100px;
 }
 
-.consulting {
+.loans {
   background : gray;
   background-position: bottom;
   background-size: cover;

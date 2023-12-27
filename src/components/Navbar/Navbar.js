@@ -31,7 +31,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          Company Name
+          LONO
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -58,11 +58,11 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/products'
+              to='/about-us'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Products
+              About us
             </Link>
           </li>
           <li className='nav-item'>
