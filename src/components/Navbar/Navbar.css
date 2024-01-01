@@ -122,7 +122,9 @@
   }
 
   .nav-links-mobile {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 1.5rem;
     margin: 2rem auto;
@@ -138,9 +140,5 @@
     background: #fff;
     color: #1888ff;
     transition: 250ms;
-  }
-
-  button {
-    display: none;
   }
 }
