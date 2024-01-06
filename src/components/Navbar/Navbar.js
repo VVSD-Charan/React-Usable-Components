@@ -47,11 +47,11 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/services"
+              to="/businessplans"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              BusinessPlan <i className="fas fa-caret-down" />
+              BusinessPlans <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>

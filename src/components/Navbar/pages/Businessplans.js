@@ -2,7 +2,7 @@ import React from 'react'
 import '../../../App.css'
 import { services_content } from '../../webdata'
 
-const Services = () => {
+const Businessplans = () => {
   return (
     <section className="section-white">
       <div className="container">
@@ -38,4 +38,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Businessplans

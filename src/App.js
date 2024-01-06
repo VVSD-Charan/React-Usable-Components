@@ -3,7 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import './App.css'
 import Home from './components/Navbar/pages/Home'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import BusinessPlan from './components/Navbar/pages/Businessplans'
+import BusinessPlans from './components/Navbar/pages/Businessplans'
 import ContactUs from './components/Navbar/pages/ContactUs'
 import Aboutus from './components/Navbar/pages/Aboutus'
 import Agri from './components/Navbar/pages/agri'
@@ -27,7 +27,7 @@ function App() {
         />
         <Route path="/servicebusiness" exact element={<Service />} />
 
-        <Route path="/services" element={<BusinessPlan />} />
+        <Route path="/businessplans" element={<BusinessPlans />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<Aboutus />} />
       </Routes>
