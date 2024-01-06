@@ -151,7 +151,6 @@
 }
 
 .team-info p{
-  color: #acacac;
   font-style: italic;
 }
 
@@ -173,6 +172,11 @@
 .card {
   width: calc(33.33% - 20px);
   margin: 20px 0;
+}
+
+.card-link{
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (max-width: 991px) {

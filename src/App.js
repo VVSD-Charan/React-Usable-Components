@@ -10,6 +10,10 @@ import Agri from './components/Navbar/pages/agri'
 import Automobile from './components/Navbar/pages/automobile'
 import Manufacturing from './components/Navbar/pages/manufacturing'
 import Service from './components/Navbar/pages/service'
+import Agriculture_business from './components/services/Agriculture_business'
+import Service_business from './components/services/Service_business'
+import Automobile_business from './components/services/Automobile_business'
+import Manufacturing_business from './components/services/Manufacturing_business'
 
 function App() {
   return (
@@ -27,9 +31,16 @@ function App() {
         />
         <Route path="/servicebusiness" exact element={<Service />} />
 
-        <Route path="/services" element={<BusinessPlan />} />
+        <Route path="/business-plans" element={<BusinessPlan />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-us" element={<Aboutus />} />
+
+        {/* Services routes  */}
+        <Route path="/services/agriculture-business" element={<Agriculture_business />} />
+        <Route path="/services/service-business" element={<Service_business />} />
+        <Route path="/services/automobile-business" element={<Automobile_business />} />
+        <Route path="/services/manufacturing-business" element={<Manufacturing_business />} />
+        
       </Routes>
     </Router>
   )

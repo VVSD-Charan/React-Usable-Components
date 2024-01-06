@@ -44,18 +44,20 @@ export const whyus = [
 // Services content
 export const services_content = [
   {
-    title: 'Agri Business',
+    title: 'Agriculture Business',
     description:
       'Bridging Supply Gaps, Ensuring Quality, and Creating Prosperity through Sustainable Farming and Animal Husbandry Ventures.',
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRszBFhYqGDjRbAwOZHdj9DPWR2AUzcVLlW3g&usqp=CAU',
+      link : '/services/agriculture-business'
   },
   {
-    title: 'Auto Mobile Business',
+    title: 'Automobile Business',
     description:
       'Empowering Entrepreneurs in the Dynamic World of Commercial Vehicles and Transportation Solutions for Comprehensive Infrastructure Development.',
     image:
       'https://blog.deasra.in/wp-content/uploads/2020/08/Automobile-business-plan-cover.jpg',
+    link : '/services/automobile-business'
   },
   {
     title: 'Manufacturing Business',
@@ -63,6 +65,7 @@ export const services_content = [
       'Embark on manufacturing success by conquering challenges in finance, location, sourcing, pricing, customer acquisition, compliance, and growth strategies.',
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI370Q8D3MTaz5C8HmV-j-PiHGBy-OUsHKmg&usqp=CAU',
+    link : '/services/manufacturing-business'
   },
   {
     title: 'Service Business',
@@ -70,5 +73,6 @@ export const services_content = [
       'Navigating finance, loans, services, and legalities, our service business thrives on strategic planning and customer-centric offerings for long-term success.',
     image:
       'https://5.imimg.com/data5/SL/VJ/AM/SELLER-8352365/loan-services-500x500.jpg',
+      link : '/services/service-business'
   },
 ]
