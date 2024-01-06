@@ -51,7 +51,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Services <i className="fas fa-caret-down" />
+              BusinessPlan <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>
