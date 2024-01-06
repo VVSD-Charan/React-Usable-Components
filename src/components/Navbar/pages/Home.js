@@ -1,13 +1,24 @@
-import React from 'react';
-import '../../../App.css';
-import Accordion from '../../Accordion/Accordion';
+import React from 'react'
+import '../../../App.css'
+import Accordion from '../../Accordion/Accordion'
+import CompanyDescription from '../../Home/CompanyDescription'
+import {
+  AgribusinessSupport,
+  CommercialVehicles,
+  ManufacturingChallenges,
+  ServiceBusinessEssentials,
+} from '../../Home/BusinessDescription'
 
 export default function Home() {
   return (
     <>
-      <h1 className='home'>LONO</h1>
+      <CompanyDescription />
 
-      <Accordion/>
+      <AgribusinessSupport />
+      <CommercialVehicles />
+      <ManufacturingChallenges />
+      <ServiceBusinessEssentials />
+      <Accordion />
     </>
-  );
+  )
 }
