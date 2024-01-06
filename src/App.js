@@ -9,7 +9,6 @@ import Aboutus from './components/Navbar/pages/Aboutus'
 import Agri from './components/Navbar/pages/agri'
 import Automobile from './components/Navbar/pages/automobile'
 import Manufacturing from './components/Navbar/pages/manufacturing'
-import Service from './components/Navbar/pages/service'
 import Agriculture_business from './components/services/Agriculture_business'
 import Service_business from './components/services/Service_business'
 import Automobile_business from './components/services/Automobile_business'
@@ -29,7 +28,6 @@ function App() {
           exact
           element={<Manufacturing />}
         />
-        <Route path="/servicebusiness" exact element={<Service />} />
 
         <Route path="/business-plans" element={<BusinessPlan />} />
         <Route path="/contact-us" element={<ContactUs />} />
