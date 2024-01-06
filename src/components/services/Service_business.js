@@ -2,7 +2,7 @@ import React from 'react'
 
 const Service_business = () => {
   return (
-    <div>Service_business</div>
+    <div className='home'>Service_business</div>
   )
 }
 

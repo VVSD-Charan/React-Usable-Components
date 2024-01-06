@@ -2,7 +2,7 @@ import React from 'react'
 
 const Agriculture_business = () => {
   return (
-    <div>Agriculture_business</div>
+    <div className='home'>Agriculture_business</div>
   )
 }
 

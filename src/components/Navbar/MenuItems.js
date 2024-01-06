@@ -1,22 +1,22 @@
 export const MenuItems = [
   {
     title: 'Agri Business',
-    path: '/agribusiness',
+    path: '/services/agriculture-business',
     cName: 'dropdown-link',
   },
   {
     title: 'Auto Mobile Business',
-    path: '/automobilebusiness',
+    path: '/services/automobile-business',
     cName: 'dropdown-link',
   },
   {
     title: 'Manufacturing Business',
-    path: '/manufacturingbusiness',
+    path: '/services/manufacturing-business',
     cName: 'dropdown-link',
   },
   {
     title: 'Service Business',
-    path: '/servicebusiness',
+    path: '/services/service-business',
     cName: 'dropdown-link',
   },
 ]
