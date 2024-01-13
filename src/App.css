@@ -21,12 +21,18 @@
 }
 
 .home {
-  background : orangered;
+  background : url('./images/home-image.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
+  font-size: 20px;
+}
+
+.home div{
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 
 .services {

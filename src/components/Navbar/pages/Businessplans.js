@@ -25,7 +25,7 @@ const Services = () => {
                         alt={item.title}
                         className="team-img"
                       />
-                      <h3 style={{fontFamily : 'Lemon'}}>{item.title}</h3>
+                      <h3 style={{fontFamily : 'Lemon',fontSize:'21px',paddingBottom:'10px'}}>{item.title}</h3>
                       <div className="team-info" style={{fontFamily:'Poppins'}}>
                         <p>{item.description}</p>
                       </div>
