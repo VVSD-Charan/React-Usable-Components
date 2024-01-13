@@ -150,10 +150,6 @@
   margin-bottom: 0;
 }
 
-.team-info p{
-  font-style: italic;
-}
-
 .team-info::after{
   background: #008aff;
 }
