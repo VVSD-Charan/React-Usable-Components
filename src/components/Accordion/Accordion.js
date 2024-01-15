@@ -3,6 +3,7 @@ import { Accordiondata } from './Accordiondata';
 import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 const PageContainer = styled.div`
   display: flex;
@@ -127,7 +128,7 @@ const AccordionComponent = () => {
       <PageContainer>
         <TopSection>
           <p className='text'>Explore our services</p>
-          <button className='button'>Click here</button>
+          <Link to = '/business-plans'><button className='button'>Click here</button></Link>
         </TopSection>
 
         <AccordionSection>
