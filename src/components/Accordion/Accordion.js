@@ -32,7 +32,7 @@ const TopSection = styled.div`
     animation: animate 1s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    margin-bottom : 20px;
+    margin-bottom : 30px;
   }
 
   button{
