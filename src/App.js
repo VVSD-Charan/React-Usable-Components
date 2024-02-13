@@ -1,36 +1,25 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import './App.css'
-import Home from './components/Navbar/pages/Home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import BusinessPlan from './components/Navbar/pages/Businessplans'
-import ContactUs from './components/Navbar/pages/ContactUs'
-import Aboutus from './components/Navbar/pages/Aboutus'
-import Agriculture_business from './components/services/Agriculture_business'
-import Service_business from './components/services/Service_business'
-import Automobile_business from './components/services/Automobile_business'
-import Manufacturing_business from './components/services/Manufacturing_business'
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-
-        <Route path="/business-plans" element={<BusinessPlan />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/about-us" element={<Aboutus />} />
-
-        {/* Services routes  */}
-        <Route path="/services/agriculture-business" element={<Agriculture_business />} />
-        <Route path="/services/service-business" element={<Service_business />} />
-        <Route path="/services/automobile-business" element={<Automobile_business />} />
-        <Route path="/services/manufacturing-business" element={<Manufacturing_business />} />
-        
-      </Routes>
-    </Router>
-  )
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
