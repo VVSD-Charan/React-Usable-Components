@@ -41,6 +41,22 @@ import paylogo4 from '../img/payment-logo/logo-4.png'
 import paylogo5 from '../img/payment-logo/logo-5.png'
 import paylogo6 from '../img/payment-logo/logo-6.png'
 import paylogo7 from '../img/payment-logo/logo-7.png'
+import paylogo8 from '../img/payment-logo/logo-8.png'
+import paylogo9 from '../img/payment-logo/logo-9.png'
+import paylogo10 from '../img/payment-logo/logo-10.png'
+import paylogo11 from '../img/payment-logo/logo-11.png'
+import paylogo12 from '../img/payment-logo/logo-12.png'
+import paylogo13 from '../img/payment-logo/logo-13.png'
+import paylogo14 from '../img/payment-logo/logo-14.png'
+import paylogo15 from '../img/payment-logo/logo-15.png'
+import paylogo16 from '../img/payment-logo/logo-16.png'
+
+// Importing service images 
+import servbg21 from '../img/service/sv-bg-2-1.jpg'
+import servicon21 from '../img/service/sv-icon-2-1.png'
+import servicon22 from '../img/service/sv-icon-2-2.png'
+import servicon23 from '../img/service/sv-icon-2-3.png'
+import servicon24 from '../img/service/sv-icon-2-4.png'
 
 
 const Home = () => {
@@ -368,39 +384,39 @@ const Home = () => {
                                                 </div>
                                                 <div className="tp-payment-method__line-8 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-8" />
-                                                    <span><img src="assets/img/payment-logo/logo-16.png" alt="" /></span>
+                                                    <span><img src={paylogo16} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-9">
                                                     <div className="tp-payment-method__circle circle-9" />
-                                                    <span><img src="assets/img/payment-logo/logo-15.png" alt="" /></span>
+                                                    <span><img src={paylogo15} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-10 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-10" />
-                                                    <span><img src="assets/img/payment-logo/logo-14.png" alt="" /></span>
+                                                    <span><img src={paylogo14} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-11">
                                                     <div className="tp-payment-method__circle circle-11" />
-                                                    <span><img src="assets/img/payment-logo/logo-13.png" alt="" /></span>
+                                                    <span><img src={paylogo13} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-12 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-12" />
-                                                    <span><img src="assets/img/payment-logo/logo-12.png" alt="" /></span>
+                                                    <span><img src={paylogo12} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-13">
                                                     <div className="tp-payment-method__circle circle-13" />
-                                                    <span><img src="assets/img/payment-logo/logo-11.png" alt="" /></span>
+                                                    <span><img src={paylogo11} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-14 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-14" />
-                                                    <span><img src="assets/img/payment-logo/logo-10.png" alt="" /></span>
+                                                    <span><img src={paylogo10} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-15">
                                                     <div className="tp-payment-method__circle circle-15" />
-                                                    <span><img src="assets/img/payment-logo/logo-9.png" alt="" /></span>
+                                                    <span><img src={paylogo9} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-16">
                                                     <div className="tp-payment-method__circle circle-16" />
-                                                    <span><img src="assets/img/payment-logo/logo-8.png" alt="" /></span>
+                                                    <span><img src={paylogo8} alt="" /></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -412,7 +428,7 @@ const Home = () => {
                         {/* tp-service-area-end */}
                         <div className="tp-service-2__area p-relative pt-70 pb-160">
                             <div className="tp-service-2__shape">
-                                <img src="assets/img/service/sv-bg-2-1.jpg" alt="" />
+                                <img src={servbg21} alt="" />
                             </div>
                             <div className="container z-index-5">
                                 <div className="row align-items-center mb-50">
@@ -456,7 +472,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src="assets/img/service/sv-icon-2-1.png" alt="" />
+                                                    <img src={servicon21} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Online</a></h4>
@@ -470,7 +486,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src="assets/img/service/sv-icon-2-2.png" alt="" />
+                                                    <img src={servicon22} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Bank Transfers</a></h4>
@@ -484,7 +500,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src="assets/img/service/sv-icon-2-3.png" alt="" />
+                                                    <img src={servicon23} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Keyed</a></h4>
@@ -498,7 +514,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item  d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src="assets/img/service/sv-icon-2-4.png" alt="" />
+                                                    <img src={servicon24} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">In-Person</a></h4>
@@ -1036,7 +1052,7 @@ const Home = () => {
                                         </div>
                                         <div className="col-xl-6 col-lg-6 col-md-6  d-none d-md-block">
                                             <div className="tp-copyright__text tp-copyright__text-2 text-center">
-                                                <span>Full Copyright &amp; Design By <a href="#">@Theme pure</a> – 2023</span>
+                                                <span>Full Copyright &amp; Design By <a href="#">@Busicon Services</a> 2024</span>
                                             </div>
                                         </div>
                                         <div className="col-xl-3 col-lg-3 col-md-3 col-sm-6">
