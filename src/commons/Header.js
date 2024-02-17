@@ -45,10 +45,10 @@ const Header = () => {
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="service-details.html">Features</a>
+                                                <a href="/services">Services</a>
                                                 <ul className="submenu">
-                                                    <li><a href="service.html">Service</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
+                                                    <li><a href="/agriculture-loan">Agriculture loans</a></li>
+                                                    <li><a href="/services">All services</a></li>
                                                 </ul>
                                             </li>
                                             <li>

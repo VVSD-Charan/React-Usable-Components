@@ -62,9 +62,9 @@ const Careers = () => {
                                     <div className="row justify-content-center">
                                         <div className="col-xl-12">
                                             <div className="breadcrumb__content text-center z-index-3 mb-60">
-                                                <h3 className="breadcrumb__title">Build Your Career With <br /> The Lemon Team</h3>
+                                                <h3 className="breadcrumb__title">Build Your Career With <br /> Busicon</h3>
                                                 <div className="breadcrumb__text">
-                                                    <p>Work without distraction on your own or with your team.</p>
+                                                    <p>Work with us to impact lives of people.</p>
                                                 </div>
                                             </div>
                                         </div>

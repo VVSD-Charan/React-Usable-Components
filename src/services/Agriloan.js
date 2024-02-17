@@ -2,6 +2,17 @@ import React from 'react'
 import Header from '../commons/Header';
 import Footer from '../commons/Footer';
 
+// Importing breadcrumb images
+import breadcrumbshape1 from '../img/breadcrumb/breadcrumb-shape-1.png'
+import breadcrumbshape2 from '../img/breadcrumb/breadcrumb-shape-2.png'
+import breadcrumbsub1 from '../img/breadcrumb/breadcrumb-sub-1.png'
+import breadcrumb3 from '../img/breadcrumb/breadcrumb-3.png'
+
+// Importing service images
+import svdashboard from '../img/service/sv-dashbord.png'
+import svdetails from '../img/service/sv-details-1.jpg'
+import svbg from '../img/service/sv-bg.jpg'
+
 const Agriloan = () => {
     return (
         <div>
@@ -57,10 +68,10 @@ const Agriloan = () => {
                         {/* breadcrumb-area-start */}
                         <div className="breadcrumb__area breadcrumb-height p-relative blue-bg-2">
                             <div className="breadcrumb__shape-1">
-                                <img src="assets/img/breadcrumb/breadcrumb-shape-1.png" alt="" />
+                                <img src={breadcrumbshape1} alt="" />
                             </div>
                             <div className="breadcrumb__shape-2">
-                                <img src="assets/img/breadcrumb/breadcrumb-shape-2.png" alt="" />
+                                <img src={breadcrumbshape2} alt="" />
                             </div>
                             <div className="container">
                                 <div className="row">
@@ -76,9 +87,9 @@ const Agriloan = () => {
                                     </div>
                                     <div className="col-xl-4 col-lg-5 col-lg-4 text-center text-md-end">
                                         <div className="breadcrumb__img p-relative text-start z-index">
-                                            <img className="z-index-3" src="assets/img/breadcrumb/breadcrumb-3.png" alt="" />
+                                            <img className="z-index-3" src={breadcrumb3} alt="" />
                                             <div className="breadcrumb__sub-img wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".4s">
-                                                <img src="assets/img/breadcrumb/breadcrumb-sub-1.png" alt="" />
+                                                <img src={breadcrumbsub1} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -116,7 +127,7 @@ const Agriloan = () => {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="tp-service__dashboard mb-30" data-background="assets/img/service/sv-bg.jpg">
+                                            <div className="tp-service__dashboard mb-30" data-background={svbg}>
                                                 <div className="tp-service__top-content">
                                                     <h3 className="tp-service__title-white">Data Analysis <br /> Tools &amp; Methods</h3>
                                                     <p>Lorem Ipsum is simply dummy text <br /> of the printing</p>
@@ -126,7 +137,7 @@ const Agriloan = () => {
                                                     </a>
                                                 </div>
                                                 <div className="tp-service__dashdboard-sm-img">
-                                                    <img className="wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".3s" src="assets/img/service/sv-dashbord.png" alt="" />
+                                                    <img className="wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".3s" src={svdashboard} alt="" />
                                                 </div>
                                             </div>
                                             <div className="sv-details-social-box mb-30">
@@ -143,7 +154,7 @@ const Agriloan = () => {
                                     <div className="col-xl-8 col-lg-8">
                                         <div className="sv-details-wrapper">
                                             <div className="sv-details-thumb mb-45">
-                                                <img className="w-100" src="assets/img/service/sv-details-1.jpg" alt="" />
+                                                <img className="w-100" src={svdetails} alt="" />
                                             </div>
                                             <div className="sv-details-title-box mb-55">
                                                 <h4 className="sv-details-title">Service Overview</h4>
@@ -272,168 +283,6 @@ const Agriloan = () => {
                             </div>
                         </div>
                         {/* service-details-area-end */}
-                        {/* tp-testimonial-area-start */}
-                        <div className="tp-testimonial-area pt-130 pb-130 fix" data-background="assets/img/testimonial/testi-bg-5-1.jpg">
-                            <div className="container">
-                                <div className="row align-items-end tp-testimonial-five-section-space">
-                                    <div className="col-md-8">
-                                        <div className="tp-testimonial-five-section-box">
-                                            <span className="tp-section-subtitle-5">CLIENTS &amp; PROJECTS</span>
-                                            <h3 className="tp-section-title-5">About Customer <span>Stories</span></h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="tp-testimonial-five-arrow d-flex align-items-center justify-content-start justify-content-md-end">
-                                            <div className="test-next">
-                                                <button><i className="far fa-arrow-left" /></button>
-                                            </div>
-                                            <div className="test-prev">
-                                                <button><i className="far fa-arrow-right" /></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="container-fluid p-0">
-                                <div className="row g-0">
-                                    <div className="col-12">
-                                        <div className="tp-testimonial-five-slider-section">
-                                            <div className=" swiper-container testimonial-five-slider-active">
-                                                <div className="swiper-wrapper">
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-4.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Joann J.</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-2.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-2.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Steven G.</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-1.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-3.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Gary M. Adams</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-3.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-4.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Edward G. Hall</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-3.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-1.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Erma P. Brown</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-2.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="tp-scrollbar" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* tp-testimonial-area-end */}
                     </main>
                     <Footer/>
                 </div>

@@ -2,6 +2,40 @@ import React from 'react'
 import Header from './commons/Header';
 import Footer from './commons/Footer';
 
+// importing project imgs 
+import projectinner4 from './img/project/project-inner-4.jpg'
+import projectinner5 from './img/project/project-inner-5.jpg'
+import projectinner6 from './img/project/project-inner-6.jpg'
+import projectinner7 from './img/project/project-inner-7.jpg'
+
+// Importing breadcrumb images
+import breadcrumbshape1 from './img/breadcrumb/breadcrumb-shape-1.png'
+import breadcrumbshape2 from './img/breadcrumb/breadcrumb-shape-2.png'
+import breadcrumbsub1 from './img/breadcrumb/breadcrumb-sub-1.png'
+import breadcrumb3 from './img/breadcrumb/breadcrumb-3.png'
+
+// Importing service images 
+import svicon31 from './img/service/sv-icon-3-1.png'
+import svshape31 from './img/service/service-shape-3-1.png'
+
+// Importing cta 
+import ctabg from './img/cta/cta-bg.jpg'
+
+// Importing faq 
+import faq1 from './img/faq/faq-1.png'
+import faqbordershape from './img/faq/faq-border-shape.png'
+
+// Importing cards 
+import sale1 from './img/card/sale-1.png'
+import sale2 from './img/card/sale-2.png'
+import sale3 from './img/card/sale-3.png'
+import cardimg1 from './img/card/card-img-1.png'
+import cardimg2 from './img/card/card-img-2.png'
+import cardimg3 from './img/card/card-img-3.png'
+import cardimg4 from './img/card/card-img-4.png'
+import cardshape1 from './img/card/card-shape-1.png' 
+import cardbg from './img/card/card-bg.png'
+
 const Services = () => {
     return (
         <div>
@@ -26,10 +60,10 @@ const Services = () => {
                         <div className="tpoffcanvas__instagram-title">
                             <h4>instagram</h4>
                         </div>
-                        <a href="#"><img src="assets/img/project/project-inner-4.jpg" alt="" /></a>
-                        <a href="#"><img src="assets/img/project/project-inner-5.jpg" alt="" /></a>
-                        <a href="#"><img src="assets/img/project/project-inner-6.jpg" alt="" /></a>
-                        <a href="#"><img src="assets/img/project/project-inner-7.jpg" alt="" /></a>
+                        <a href="#"><img src={projectinner4} alt="" /></a>
+                        <a href="#"><img src={projectinner5} alt="" /></a>
+                        <a href="#"><img src={projectinner6} alt="" /></a>
+                        <a href="#"><img src={projectinner7} alt="" /></a>
                     </div>
                     <div className="tpoffcanvas__info text-center">
                         <h4 className="offcanva-title">we are here</h4>
@@ -57,10 +91,10 @@ const Services = () => {
                         {/* tp-breadcrumb-area-start */}
                         <div className="about-banner-area p-relative">
                             <div className="about-shape-1 z-index-3">
-                                <img src="assets/img/breadcrumb/breadcrumb-shape-1.png" alt="" />
+                                <img src={breadcrumbshape1} alt="" />
                             </div>
                             <div className="about-shape-2 z-index-3">
-                                <img src="assets/img/breadcrumb/breadcrumb-shape-2.png" alt="" />
+                                <img src={breadcrumbshape2} alt="" />
                             </div>
                             <div className="about-banner p-relative z-index fix">
                                 <div className="container">
@@ -83,7 +117,7 @@ const Services = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="about-img about-img-height p-relative" data-background="assets/img/breadcrumb/breadcrumb-2.jpg">
+                                        <div className="about-img about-img-height p-relative" data-background={breadcrumb3}>
                                             <div className="about-img-content">
                                                 <h4 className="about-img-title" data-parallax="{&quot;y&quot;: 1000, &quot;smoothness&quot;: 10}">
                                                     <span>Our Top</span> <br />
@@ -115,7 +149,7 @@ const Services = () => {
                                     <div className="col-xl-8 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
                                         <div className="tp-service-3-item mb-30 p-relative z-index" data-background="assets/img/service/service-3-bg.png">
                                             <div className="tp-service-3-icon">
-                                                <img src="assets/img/service/sv-icon-3-1.png" alt="" />
+                                                <img src={svicon31} alt="" />
                                             </div>
                                             <div className="tp-service-3-content">
                                                 <span>CRM Management</span>
@@ -125,7 +159,7 @@ const Services = () => {
                                                 <a className="tp-btn-white-solid" href="service-details.html">Learn More</a>
                                             </div>
                                             <div className="tp-service-3-shape">
-                                                <img src="assets/img/service/service-shape-3-1.png" alt="" />
+                                                <img src={svshape31} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -277,22 +311,22 @@ const Services = () => {
                                     <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
                                         <div className="tp-card-thumb-wrapper p-relative">
                                             <div className="tp-card-main-img">
-                                                <img src="assets/img/card/card-bg.png" alt="" />
+                                                <img src={cardbg} alt="" />
                                             </div>
                                             <div className="tp-card-img-1">
-                                                <img src="assets/img/card/card-shape-1.png" alt="" />
+                                                <img src={cardshape1} alt="" />
                                             </div>
                                             <div className="tp-card-img-2 d-none d-sm-block">
-                                                <img src="assets/img/card/card-img-1.png" alt="" />
+                                                <img src={cardimg1} alt="" />
                                             </div>
                                             <div className="tp-card-img-3 d-none d-sm-block">
-                                                <img src="assets/img/card/card-img-2.png" alt="" />
+                                                <img src={cardimg2} alt="" />
                                             </div>
                                             <div className="tp-card-img-4 d-none d-sm-block">
-                                                <img src="assets/img/card/card-img-3.png" alt="" />
+                                                <img src={cardimg3} alt="" />
                                             </div>
                                             <div className="tp-card-img-5">
-                                                <img src="assets/img/card/card-img-4.png" alt="" />
+                                                <img src={cardimg4} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -333,13 +367,13 @@ const Services = () => {
                                     <div className="col-xl-6 col-lg-6 order-0 order-md-2 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
                                         <div className="tp-sales-img-wrapper p-relative text-end">
                                             <div className="tp-sales-main-thumb">
-                                                <img src="assets/img/card/sale-1.png" alt="" />
+                                                <img src={sale1} alt="" />
                                             </div>
                                             <div className="tp-sales-sub-img-1">
-                                                <img src="assets/img/card/sale-2.png" alt="" />
+                                                <img src={sale2} alt="" />
                                             </div>
                                             <div className="tp-sales-sub-img-2 d-none d-sm-block">
-                                                <img src="assets/img/card/sale-3.png" alt="" />
+                                                <img src={sale3} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -347,168 +381,7 @@ const Services = () => {
                             </div>
                         </div>
                         {/* tp-sales-area-end */}
-                        {/* tp-testimonial-area-start */}
-                        <div className="tp-testimonial-area pt-130 pb-130 fix" data-background="assets/img/testimonial/testi-bg-5-1.jpg">
-                            <div className="container">
-                                <div className="row align-items-end tp-testimonial-five-section-space">
-                                    <div className="col-md-8">
-                                        <div className="tp-testimonial-five-section-box">
-                                            <span className="tp-section-subtitle-5">CLIENTS &amp; PROJECTS</span>
-                                            <h3 className="tp-section-title-5">About Customer <span>Stories</span></h3>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="tp-testimonial-five-arrow d-flex align-items-center justify-content-start justify-content-md-end">
-                                            <div className="test-next">
-                                                <button><i className="far fa-arrow-left" /></button>
-                                            </div>
-                                            <div className="test-prev">
-                                                <button><i className="far fa-arrow-right" /></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="container-fluid p-0">
-                                <div className="row g-0">
-                                    <div className="col-12">
-                                        <div className="tp-testimonial-five-slider-section">
-                                            <div className=" swiper-container testimonial-five-slider-active">
-                                                <div className="swiper-wrapper">
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-4.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Joann J.</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-2.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-2.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Steven G.</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-1.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-3.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Gary M. Adams</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-3.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-4.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Edward G. Hall</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-3.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="swiper-slide">
-                                                        <div className="tp-testimonial-five-item">
-                                                            <div className="tp-testimonial-five-wrapper d-flex justify-content-between align-items-center">
-                                                                <div className="tp-testimonial-five-top-info d-flex align-items-center">
-                                                                    <div className="tp-testimonial-five-avata">
-                                                                        <img src="assets/img/testimonial/testi-icon-5-1.png" alt="" />
-                                                                    </div>
-                                                                    <div className="tp-testimonial-five-author-info">
-                                                                        <h4>Erma P. Brown</h4>
-                                                                        <span>Community Organiser</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="tp-testimonial-five-brand d-none d-sm-block">
-                                                                    <img src="assets/img/testimonial/testi-logo-5-2.png" alt="" />
-                                                                </div>
-                                                            </div>
-                                                            <div className="tp-testimonial-five-content">
-                                                                <p>“ This is really awesome. many small businessmen are
-                                                                    suffering from this service in different platform and the
-                                                                    lovers are always looking this kind of feature on
-                                                                    their own website. ”
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="tp-scrollbar" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* tp-testimonial-area-end */}
+                    
                         {/* tp-faq-area-start */}
                         <div className="tp-faq-area pt-140 pb-120">
                             <div className="container">
@@ -527,10 +400,10 @@ const Services = () => {
                                                 </a>
                                             </div>
                                             <div className="tp-faq-img">
-                                                <img src="assets/img/faq/faq-1.png" alt="" />
+                                                <img src={faq1} alt="" />
                                             </div>
                                             <div className="tp-faq-border-shape d-none">
-                                                <img src="assets/img/faq/faq-border-shape.png" alt="" />
+                                                <img src={faqbordershape} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -620,7 +493,7 @@ const Services = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="tp-cta-bg" data-background="assets/img/cta/cta-bg.jpg">
+                                        <div className="tp-cta-bg" data-background={ctabg}>
                                             <div className="tp-cta-content tp-inner-font text-center">
                                                 <h3 className="tp-section-title text-white">Try our service now!</h3>
                                                 <p>Eyerything you need to accept cord payments and grow your business <br />
