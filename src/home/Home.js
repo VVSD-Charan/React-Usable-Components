@@ -1,5 +1,10 @@
 import React from 'react'
 
+// Importing busicon logo
+import logo from '../img/busicon/logo.png'
+import downlogo from '../img/busicon/down-logo.png'
+import homebg1 from '../img/busicon/homebg1.png'
+
 // Importing logos 
 import whiteLogo from '../img/logo/logo-white.png'
 import blackLogo from '../img/logo/logo-black.png'
@@ -57,6 +62,7 @@ import servicon21 from '../img/service/sv-icon-2-1.png'
 import servicon22 from '../img/service/sv-icon-2-2.png'
 import servicon23 from '../img/service/sv-icon-2-3.png'
 import servicon24 from '../img/service/sv-icon-2-4.png'
+import Header from '../commons/Header'
 
 
 const Home = () => {
@@ -67,85 +73,7 @@ const Home = () => {
                 <i className="far fa-angle-double-up" />
             </button>
             {/* back-to-top-end  */}
-            <header className="tp-header-height">
-                {/* tp-header-area-start */}
-                <div id="header-sticky" className="tp-header-2__area header-sticky-bg-2 tp-header-2__transparent tp-header-2__plr z-index-3">
-                    <div className="container-fluid g-0">
-                        <div className="row g-0 align-items-center">
-                            <div className="col-xl-2 col-lg-2 col-md-6 col-6">
-                                <div className="tp-header-2__logo">
-                                    <a className="white-logo" href="index.html"><img src={whiteLogo} alt="" /></a>
-                                    <a className="black-logo" href="index.html"><img src={blackLogo} alt="" /></a>
-                                </div>
-                            </div>
-                            <div className="col-xl-7 col-lg-7 d-none d-lg-block">
-                                <div className="tp-header-2__main-menu text-center">
-                                    <nav id="mobile-menu">
-                                        <ul>
-                                            <li>
-                                                <a href="index.html">Home</a>
-                                                <ul className="submenu">
-                                                    <li><a href="index.html">Data analytics</a></li>
-                                                    <li><a href="index-2.html">Payment Gateway</a></li>
-                                                    <li><a href="index-3.html">CRM Software</a></li>
-                                                    <li><a href="index-4.html">Security Software</a></li>
-                                                    <li><a href="index-5.html">Saas</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Pages</a>
-                                                <ul className="submenu">
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                    <li><a href="career.html">Career</a></li>
-                                                    <li><a href="career-details.html">Career Details</a></li>
-                                                    <li><a href="integrations.html">Integrations</a></li>
-                                                    <li><a href="price.html">Price</a></li>
-                                                    <li><a href="register.html">Register</a></li>
-                                                    <li><a href="sign-in.html">Signin</a></li>
-                                                    <li><a href="404.html">404</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="service-details.html">Features</a>
-                                                <ul className="submenu">
-                                                    <li><a href="service.html">Service</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blog-details.html">Blog</a>
-                                                <ul className="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-list.html">Blog List</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                    <li><a href="blog-details-2.html">Blog Details 02</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="project-details.html">Portfoilo</a>
-                                                <ul className="submenu">
-                                                    <li><a href="project.html">Project</a></li>
-                                                    <li><a href="project-details.html">Project Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-lg-3 col-md-6 col-6">
-                                <div className="tp-header-2__right d-flex align-items-center justify-content-end">
-                                    <a className="tp-header-2__login d-none d-md-block" href="/careers">Careers</a>
-                                    <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* tp-header-area-end */}
-            </header>
+            <Header/>
             {/* tp-offcanvus-area-start */}
             <div className="tpoffcanvas-area">
                 <div className="tpoffcanvas">
@@ -208,11 +136,10 @@ const Home = () => {
                                 <div className="row g-0 align-items-end">
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="tp-hero-2__title-box">
-                                            <h3 className="tp-hero-2__title tp-char-animation">The
-                                                next generation payment ways.</h3>
+                                            <h3 className="tp-hero-2__title tp-char-animation">Busicon Services <p style={{fontSize:'30px',letterSpacing:'1px',color:'white',lineHeight:'1.3',marginBottom:'20px',marginTop:'25px'}}>Your Collaborative Path to Funding Success.</p></h3>
                                         </div>
-                                        <div className="tp-hero-2__btn">
-                                            <a className="tp-btn-green wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="service-details.html">Get Started For Free</a>
+                                        <div className="tp-hero-2__btn" style={{marginBottom:'250px'}}>
+                                            <a className="tp-btn-green wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="service-details.html">Check out our services</a>
                                         </div>
                                         <div className="tp-hero-2__user p-relative">
                                             <h4 className="tp-char-animation-2">Over<span>5Ok+ Client</span> all over the world</h4>
@@ -229,7 +156,7 @@ const Home = () => {
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="tp-hero-2__right text-end p-relative">
                                             <div className="tp-hero-2__main-img wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-                                                <img src={img21} alt="" />
+                                                <img src={homebg1} alt="" style={{height:'1000px',width:'700px',paddingBottom:'350px'}}/>
                                             </div>
                                             <div className="tp-hero-2__sub-img-1 d-none d-sm-block" data-parallax="{&quot;x&quot;: 100, &quot;smoothness&quot;: 30}">
                                                 <img src={img02} alt="" />
