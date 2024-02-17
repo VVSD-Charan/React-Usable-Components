@@ -1,9 +1,8 @@
 import React from 'react'
 
 // Importing busicon logo
-import logo from '../img/busicon/logo.png'
-import downlogo from '../img/busicon/down-logo.png'
 import homebg1 from '../img/busicon/homebg1.png'
+import downlogo from '../img/busicon/down-logo.png'
 
 // Importing logos 
 import whiteLogo from '../img/logo/logo-white.png'
@@ -63,6 +62,13 @@ import servicon22 from '../img/service/sv-icon-2-2.png'
 import servicon23 from '../img/service/sv-icon-2-3.png'
 import servicon24 from '../img/service/sv-icon-2-4.png'
 import Header from '../commons/Header'
+
+// Importing account images
+import accountbg from '../img/account/account-bg.png'
+import accmain from '../img/account/acc-main.png'
+import acauthor from '../img/account/ac-author.png'
+import acshape1 from '../img/account/ac-shape-1.png'
+import acshape2 from '../img/account/ac-shape-2.png'
 
 
 const Home = () => {
@@ -157,18 +163,6 @@ const Home = () => {
                                         <div className="tp-hero-2__right text-end p-relative">
                                             <div className="tp-hero-2__main-img wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
                                                 <img src={homebg1} alt="" style={{height:'1000px',width:'700px',paddingBottom:'350px'}}/>
-                                            </div>
-                                            <div className="tp-hero-2__sub-img-1 d-none d-sm-block" data-parallax="{&quot;x&quot;: 100, &quot;smoothness&quot;: 30}">
-                                                <img src={img02} alt="" />
-                                            </div>
-                                            <div className="tp-hero-2__sub-img-2 d-none d-sm-block" data-parallax="{&quot;x&quot;: -100, &quot;smoothness&quot;: 10}">
-                                                <img src={img23} alt="" />
-                                            </div>
-                                            <div className="tp-hero-2__sub-img-3 d-none d-sm-block" data-parallax="{&quot;y&quot;: -80, &quot;smoothness&quot;: 30}">
-                                                <img src={img24} alt="" />
-                                            </div>
-                                            <div className="tp-hero-2__sub-img-4">
-                                                <img src={imgshape22} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -488,19 +482,19 @@ const Home = () => {
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="tp-account-thumb-wrapper p-relative text-center wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
                                             <div className="tp-account-bg">
-                                                <img src="assets/img/account/account-bg.png" alt="" />
+                                                <img src={accountbg} alt="" />
                                             </div>
                                             <div className="tp-account-main-img">
-                                                <img src="assets/img/account/acc-main.png" alt="" />
+                                                <img src={accmain} alt="" />
                                             </div>
                                             <div className="tp-account-author">
-                                                <img src="assets/img/account/ac-author.png" alt="" />
+                                                <img src={acauthor} alt="" />
                                             </div>
                                             <div className="tp-account-shape-1">
-                                                <img src="assets/img/account/ac-shape-1.png" alt="" />
+                                                <img src={acshape1} alt="" />
                                             </div>
                                             <div className="tp-account-shape-2">
-                                                <img src="assets/img/account/ac-shape-2.png" alt="" />
+                                                <img src={acshape2} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -534,232 +528,7 @@ const Home = () => {
                             </div>
                         </div>
                         {/* tp-account-area-end */}
-                        {/* tp-testimonial-area-start */}
-                        <div className="tp-testimonial-2-area pt-110 pb-120" data-background="assets/img/testimonial/testi-bg-2-1.png">
-                            <div className="container">
-                                <div className="row justify-content-center">
-                                    <div className="col-xl-8">
-                                        <div className="tp-testimonial-2-section-box mb-15 text-center">
-                                            <h3 className="tp-section-title-lg text-white">What people <br />
-                                                are saying about us</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-12">
-                                        <div className="tp-testimonial-2-section">
-                                            <div className="tp-testimonial-2-slider-active">
-                                                <div>
-                                                    <div className="tp-testimonial-2-item p-relative wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                                                        <div className="tp-testimonial-2-border-shape">
-                                                            <img src="assets/img/testimonial/BODY.png" alt="" />
-                                                        </div>
-                                                        <div className="tp-testimonial-2-star">
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-content">
-                                                            <p>"Is it possible to Love your credit card processor? with Softec, yes!"</p>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-author d-flex align-items-center">
-                                                            <div className="tp-testimonial-2-img">
-                                                                <img src="assets/img/testimonial/testi-icon-2-1.png" alt="" />
-                                                            </div>
-                                                            <div className="tp-testimonial-2-author-info">
-                                                                <h5>Lana Rey</h5>
-                                                                <span>Founder &amp; Leader</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className="tp-testimonial-2-item p-relative wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                                                        <div className="tp-testimonial-2-border-shape">
-                                                            <img src="assets/img/testimonial/BODY.png" alt="" />
-                                                        </div>
-                                                        <div className="tp-testimonial-2-star">
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-content">
-                                                            <p>"Is it possible to Love your credit card processor? with Softec, yes!"</p>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-author d-flex align-items-center">
-                                                            <div className="tp-testimonial-2-img">
-                                                                <img src="assets/img/testimonial/testi-icon-2-2.png" alt="" />
-                                                            </div>
-                                                            <div className="tp-testimonial-2-author-info">
-                                                                <h5>J. McGhee</h5>
-                                                                <span>Founder &amp; Leader</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className="tp-testimonial-2-item p-relative wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                                                        <div className="tp-testimonial-2-border-shape">
-                                                            <img src="assets/img/testimonial/BODY.png" alt="" />
-                                                        </div>
-                                                        <div className="tp-testimonial-2-star">
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-content">
-                                                            <p>"Is it possible to Love your credit card processor? with Softec, yes!"</p>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-author d-flex align-items-center">
-                                                            <div className="tp-testimonial-2-img">
-                                                                <img src="assets/img/testimonial/testi-icon-2-3.png" alt="" />
-                                                            </div>
-                                                            <div className="tp-testimonial-2-author-info">
-                                                                <h5>Michael H.</h5>
-                                                                <span>Founder &amp; Leader</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className="tp-testimonial-2-item p-relative wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                                                        <div className="tp-testimonial-2-border-shape">
-                                                            <img src="assets/img/testimonial/BODY.png" alt="" />
-                                                        </div>
-                                                        <div className="tp-testimonial-2-star">
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                            <span>
-                                                                <svg width={16} height={16} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8 0L10.472 5.26604L16 6.11567L12 10.2124L12.944 16L8 13.266L3.056 16L4 10.2124L0 6.11567L5.528 5.26604L8 0Z" fill="#FFCF55" />
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-content">
-                                                            <p>"Is it possible to Love your credit card processor? with Softec, yes!"</p>
-                                                        </div>
-                                                        <div className="tp-testimonial-2-author d-flex align-items-center">
-                                                            <div className="tp-testimonial-2-img">
-                                                                <img src="assets/img/testimonial/testi-icon-2-1.png" alt="" />
-                                                            </div>
-                                                            <div className="tp-testimonial-2-author-info">
-                                                                <h5>Lana Rey</h5>
-                                                                <span>Founder &amp; Leader</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* tp-testimonial-area-end */}
+                       
                         {/* tp-faq-area-start */}
                         <div className="tp-faq-area pt-140 pb-120 fix">
                             <div className="container">
@@ -887,13 +656,13 @@ const Home = () => {
                                     <div className="row">
                                         <div className="col-xl-3 col-lg-3 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
                                             <div className="tp-footer__widget footer-widget-2 footer-col-2-1">
-                                                <div className="tp-footer__logo mb-25">
-                                                    <a href="index.html">
-                                                        <img src="assets/img/logo/logo-black.png" alt="" />
+                                                <div className="tp-footer__logo mb-25" style={{textAlign:'center'}}>
+                                                    <a href="/">
+                                                        <img src={downlogo} style={{height:'130px',marginBottom:'20px',marginLeft:'-70px'}} alt="" />
                                                     </a>
                                                 </div>
                                                 <div className="tp-footer__contact-info">
-                                                    <a href="https://www.google.com.bd/maps/place/লাক্সেমবার্গ/@49.8143242,5.5590915,10z/data=!3m1!4b1!4m5!3m4!1s0x479545b9ca212147:0x64db60f602d392ef!8m2!3d49.815273!4d6.129583" target="_blank">1811 Silverside Rd, Wilmington,<br />DE 19810, USA</a>
+                                                    <a href="https://www.google.com.bd/maps/place/লাক্সেমবার্গ/@49.8143242,5.5590915,10z/data=!3m1!4b1!4m5!3m4!1s0x479545b9ca212147:0x64db60f602d392ef!8m2!3d49.815273!4d6.129583" target="_blank">Head office : Siddipet,<br />Telangana, India</a>
                                                     <ul>
                                                         <li>
                                                             <span>
@@ -903,7 +672,7 @@ const Home = () => {
                                                                     <path fillRule="evenodd" clipRule="evenodd" d="M12.1436 5.22244C12.2893 4.71255 12.8207 4.41731 13.3306 4.56299L13.0668 5.48622C13.3306 4.56299 13.3306 4.56299 13.3306 4.56299L13.3324 4.56352L13.3344 4.56408L13.3387 4.56533L13.3486 4.56829L13.3739 4.57618C13.3932 4.58236 13.4173 4.5904 13.4461 4.60059C13.5036 4.621 13.5796 4.65001 13.6728 4.68996C13.8593 4.76989 14.1141 4.89333 14.4272 5.0786C15.0538 5.44946 15.9092 6.06547 16.9142 7.07042C17.9191 8.07536 18.5351 8.9308 18.906 9.55742C19.0913 9.87045 19.2147 10.1253 19.2946 10.3118C19.3346 10.405 19.3636 10.481 19.384 10.5385C19.3942 10.5673 19.4022 10.5914 19.4084 10.6107L19.4163 10.636L19.4193 10.6459L19.4205 10.6502L19.4211 10.6521C19.4211 10.6521 19.4216 10.654 18.4984 10.9178L19.4216 10.654C19.5673 11.1639 19.272 11.6953 18.7622 11.841C18.2566 11.9854 17.7299 11.6964 17.5789 11.1945L17.5742 11.1807C17.5674 11.1615 17.5533 11.1236 17.5296 11.0683C17.4822 10.9577 17.3963 10.7769 17.2534 10.5355C16.9679 10.0532 16.4524 9.32441 15.5563 8.42831C14.6602 7.53221 13.9314 7.01665 13.4491 6.7312C13.2077 6.58831 13.0269 6.50241 12.9163 6.45504C12.861 6.43133 12.8231 6.41721 12.8039 6.41038L12.7901 6.40565C12.2882 6.25474 11.9991 5.72799 12.1436 5.22244Z" fill="#01103D" />
                                                                 </svg>
                                                             </span>
-                                                            <a className="first-child" href="tel:+806(000)8899">+806 (000) 88 99</a>
+                                                            <a className="first-child" href="tel:+806(000)8899">7658934523</a>
                                                         </li>
                                                         <li>
                                                             <span>
@@ -913,7 +682,7 @@ const Home = () => {
                                                                     <path d="M5.2425 6.2998C4.83243 6.2998 4.5 6.63223 4.5 7.0423C4.5 7.45238 4.83243 7.7848 5.2425 7.7848H13.1625C13.5726 7.7848 13.905 7.45238 13.905 7.0423C13.905 6.63223 13.5726 6.2998 13.1625 6.2998H5.2425Z" fill="#1C274C" />
                                                                 </svg>
                                                             </span>
-                                                            <a href="mailto:contact@info.com">contact@info.com</a>
+                                                            <a href="mailto:contact@info.com">ceo@busicon.co.in</a>
                                                         </li>
                                                     </ul>
                                                 </div>
