@@ -5,7 +5,7 @@ export const rolesData = [
         location : "Siddipet"
     },
     {
-        name : "SOftware Engineer",
+        name : "Software Engineer",
         duration : "Internship",
         location : "Siddipet"
     },
