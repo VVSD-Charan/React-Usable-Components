@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Application = ({role}) => {
+    console.log(role);
     return (
         <div className="col-xl-5 col-lg-5 career-details-pin">
             <div id="show" className="career-details-hide-wrapper">
@@ -56,19 +57,20 @@ const Application = ({role}) => {
                                 </div>
                                 <div className="col-12">
                                     <div className="postbox__comment-input mb-30">
-                                        <input type="text" className="inputText" required />
+                                        <input type="text" className="inputText"/>
                                         <span className="floating-label">Personal website</span>
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="postbox__select mb-30">
+                                        <span style={{paddingRight:'10px'}}>Years of experience</span>
                                         <select>
-                                            <option>Years of experience</option>
-                                            <option>01 Year</option>
-                                            <option>02 Year</option>
-                                            <option>03 Year</option>
-                                            <option>04 Year</option>
-                                            <option>05 Year</option>
+                                            <option>00 - 01 Year</option>
+                                            <option>01 Years</option>
+                                            <option>02 Years</option>
+                                            <option>03 Years</option>
+                                            <option>04 Years</option>
+                                            <option>05+ Years</option>
                                         </select>
                                     </div>
                                 </div>
@@ -83,7 +85,7 @@ const Application = ({role}) => {
                     </div>
                     <div className="col-xxl-12">
                         <div className="postbox__comment-input mb-30">
-                            <textarea className="textareaText" required defaultValue={""} />
+                            <textarea className="textareaText" defaultValue={""} />
                             <span className="floating-label-2">Personal note</span>
                         </div>
                     </div>
@@ -111,20 +113,6 @@ const Application = ({role}) => {
                             <button className="submit-btn w-100">Submit Application</button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="col-xxl-12">
-                <div className="career-details-social-box mb-20">
-                    <a className="facebook" href="#"><i className="fab fa-facebook-f" /></a>
-                    <a className="twitter" href="#"><i className="fab fa-twitter" /></a>
-                    <a className="instagram p-relative" href="#">
-                        <div className="insta-bg" />
-                        <i className="fab fa-instagram" />
-                    </a>
-                    <a className="linkedin" href="#"><i className="fab fa-linkedin-in" /></a>
-                </div>
-                <div className="career-details-bottom-text text-center">
-                    <a href="#">Employee at Softec?</a>
                 </div>
             </div>
         </div>

@@ -9,6 +9,11 @@ import breadcrumbshape2 from './img/breadcrumb/breadcrumb-shape-2.png'
 // Importing contact images 
 import contactbanner from './img/contact/contact-banner.jpg'
 
+import {MdMail} from 'react-icons/md'
+import {FaPhoneAlt} from 'react-icons/fa'
+import {FaLocationDot} from 'react-icons/fa6'
+
+
 const Contact = () => {
     return (
         <div>
@@ -21,9 +26,6 @@ const Contact = () => {
                         <div className="about-banner-area p-relative">
                             <div className="about-shape-1 z-index-3">
                                 <img src={breadcrumbshape1} alt="" />
-                            </div>
-                            <div className="about-shape-2 z-index-3">
-                                <img src={breadcrumbshape2} alt="" />
                             </div>
                             <div className="about-banner p-relative z-index fix">
                                 <div className="container">
@@ -46,7 +48,7 @@ const Contact = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="about-img about-img-height p-relative" data-background={contactbanner}>
+                                        <div className="about-img about-img-height p-relative"  style={{background:`url(${contactbanner})`,backgroundRepeat:'no-repeat'}}>
                                             <div className="about-img-content">
                                                 <h4 className="about-img-title" data-parallax="{&quot;y&quot;: 1000, &quot;smoothness&quot;: 10}">
                                                     <span>Get In</span> <br />
@@ -112,7 +114,7 @@ const Contact = () => {
                                         <div className="contact-form-left">
                                             <div className="contact-form-section-box pb-80">
                                                 <h5 className="inner-section-subtitle">CONTACT US</h5>
-                                                <h4 className="tp-section-title pb-10">We'd love to <br /> hear From
+                                                <h4 className="tp-section-title pb-10">We'd love to <br /> hear From {' '}
                                                     <span>
                                                         <svg width={44} height={44} viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                                             <rect width={44} height={44} fill="url(#pattern0)" />
@@ -124,20 +126,9 @@ const Contact = () => {
                                                             </defs>
                                                         </svg>
                                                     </span>
-                                                    you.</h4>
+                                                    <br/>you.</h4>
                                                 <p>While we're good with smoke signals,
                                                     there <br /> are easier ways to get in touch.</p>
-                                            </div>
-                                            <div className="contact-form-social-box p-relative">
-                                                <div className="contact-form-social-item">
-                                                    <a href="#"><i className="fab fa-facebook-f" /></a>
-                                                    <a href="#"><i className="fab fa-twitter" /></a>
-                                                    <a href="#"><i className="fab fa-linkedin-in" /></a>
-                                                    <a href="#"><i className="fab fa-instagram" /></a>
-                                                </div>
-                                                <div className="contact-form-section-img">
-                                                    <img src="assets/img/contact/contact-icon-sm-4.png" alt="" />
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -164,18 +155,6 @@ const Contact = () => {
                                                                 <span className="floating-label">Phone Number</span>
                                                             </div>
                                                         </div>
-                                                        <div className="col-12">
-                                                            <div className="postbox__select mb-30">
-                                                                <select>
-                                                                    <option>Your Inquiry about</option>
-                                                                    <option>01 Year</option>
-                                                                    <option>02 Year</option>
-                                                                    <option>03 Year</option>
-                                                                    <option>04 Year</option>
-                                                                    <option>05 Year</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
                                                         <div className="col-xxl-12">
                                                             <div className="postbox__comment-input mb-30">
                                                                 <textarea className="textareaText" required defaultValue={""} />
@@ -200,8 +179,8 @@ const Contact = () => {
                                 <div className="row">
                                     <div className="col-xl-12">
                                         <div className="contact-inner-title-sm-wrap text-center mb-50">
-                                            <h4 className="contact-inner-title-sm">Book a Demo!</h4>
-                                            <p>We will contact again after receive your request in 24h</p>
+                                            <h4 className="contact-inner-title-sm">Connect with us!</h4>
+                                            <p>We will reply back in 1 working day</p>
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +192,7 @@ const Contact = () => {
                                                     <img src="assets/img/contact/contact-icon-sm-1.png" alt="" />
                                                 </div>
                                                 <div className="contact-inner-link">
-                                                    <a href="mailto:contact@softuch.com">contact@softuch.com</a>
+                                                    <a href="mailto:ceo@busicon.co.in"><MdMail style={{fontSize:'23px'}}/>  ceo@busicon.co.in</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -223,7 +202,7 @@ const Contact = () => {
                                                     <img src="assets/img/contact/contact-icon-sm-2.png" alt="" />
                                                 </div>
                                                 <div className="contact-inner-link">
-                                                    <a href="tel:12025550144">+1-202-555-0144</a>
+                                                    <a href="tel:7658934523"><FaPhoneAlt/>  +91 7658934523</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -233,7 +212,7 @@ const Contact = () => {
                                                     <img src="assets/img/contact/contact-icon-sm-3.png" alt="" />
                                                 </div>
                                                 <div className="contact-inner-link">
-                                                    <a href="https://www.google.com.bd/maps/@23.7806365,90.4193257,12z" target="_blank">35Park Avenue, Uk</a>
+                                                    <a href="https://www.google.com.bd/maps/@23.7806365,90.4193257,12z" target="_blank"><FaLocationDot style={{fontSize:'20px'}}/> Siddipet , Telangana , India</a>
                                                 </div>
                                             </div>
                                         </div>

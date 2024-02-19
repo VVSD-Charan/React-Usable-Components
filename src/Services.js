@@ -12,11 +12,12 @@ import projectinner7 from './img/project/project-inner-7.jpg'
 import breadcrumbshape1 from './img/breadcrumb/breadcrumb-shape-1.png'
 import breadcrumbshape2 from './img/breadcrumb/breadcrumb-shape-2.png'
 import breadcrumbsub1 from './img/breadcrumb/breadcrumb-sub-1.png'
-import breadcrumb3 from './img/breadcrumb/breadcrumb-3.png'
+import breadcrumb2 from './img/breadcrumb/breadcrumb-2.jpg'
 
 // Importing service images 
 import svicon31 from './img/service/sv-icon-3-1.png'
 import svshape31 from './img/service/service-shape-3-1.png'
+import service3bg from './img/service/service-3-bg.png'
 
 // Importing cta 
 import ctabg from './img/cta/cta-bg.jpg'
@@ -40,49 +41,6 @@ import Faq from './commons/Faq';
 const Services = () => {
     return (
         <div>
-            {/* back-to-top-start  */}
-            <button className="scroll-top scroll-to-target" data-target="html">
-                <i className="far fa-angle-double-up" />
-            </button>
-            {/* back-to-top-end  */}
-            {/* tp-offcanvus-area-start */}
-            <div className="tpoffcanvas-area">
-                <div className="tpoffcanvas">
-                    <div className="tpoffcanvas__close-btn">
-                        <button className="close-btn"><i className="fal fa-times" /></button>
-                    </div>
-                    <div className="tpoffcanvas__logo text-center">
-                        <a href="index.html">
-                            <img src="assets/img/logo/logo-white.png" alt="" />
-                        </a>
-                    </div>
-                    <div className="mobile-menu" />
-                    <div className="tpoffcanvas__instagram text-center">
-                        <div className="tpoffcanvas__instagram-title">
-                            <h4>instagram</h4>
-                        </div>
-                        <a href="#"><img src={projectinner4} alt="" /></a>
-                        <a href="#"><img src={projectinner5} alt="" /></a>
-                        <a href="#"><img src={projectinner6} alt="" /></a>
-                        <a href="#"><img src={projectinner7} alt="" /></a>
-                    </div>
-                    <div className="tpoffcanvas__info text-center">
-                        <h4 className="offcanva-title">we are here</h4>
-                        <a href="https://www.google.com/maps/@23.506657,90.3443647,7z" target="_blank">
-                            27 Division St, New York, <br />
-                            NY 10002, USA
-                        </a>
-                    </div>
-                    <div className="tpoffcanvas__social">
-                        <div className="social-icon text-center">
-                            <a href="#"><i className="fab fa-twitter" /></a>
-                            <a href="#"><i className="fab fa-instagram" /></a>
-                            <a href="#"><i className="fab fa-facebook-square" /></a>
-                            <a href="#"><i className="fab fa-dribbble" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="body-overlay" />
             {/* tp-offcanvus-area-end */}
             <Header/>
@@ -93,9 +51,6 @@ const Services = () => {
                         <div className="about-banner-area p-relative">
                             <div className="about-shape-1 z-index-3">
                                 <img src={breadcrumbshape1} alt="" />
-                            </div>
-                            <div className="about-shape-2 z-index-3">
-                                <img src={breadcrumbshape2} alt="" />
                             </div>
                             <div className="about-banner p-relative z-index fix">
                                 <div className="container">
@@ -118,7 +73,7 @@ const Services = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="about-img about-img-height p-relative" data-background={breadcrumb3}>
+                                        <div className="about-img about-img-height p-relative" style={{background:`url(${breadcrumb2})`,backgroundRepeat:'no-repeat'}}>
                                             <div className="about-img-content">
                                                 <h4 className="about-img-title" data-parallax="{&quot;y&quot;: 1000, &quot;smoothness&quot;: 10}">
                                                     <span>Our Top</span> <br />
