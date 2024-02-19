@@ -32,7 +32,7 @@ import mobile from '../img/payment/mobile.png'
 import payment3 from '../img/payment/payment-3.png'
 import message from '../img/payment/message.png'
 import background from '../img/payment/background.png'
-import payimage from '../img/payment/image.png' 
+import payimage from '../img/payment/image.png'
 import getpaid from '../img/payment/get-paid.png'
 
 // importing payment logo 
@@ -71,7 +71,7 @@ import acshape2 from '../img/account/ac-shape-2.png'
 import Footer from '../commons/Footer'
 
 // Importing faq image 
-import faq1 from '../img/faq/faq-1.png'
+import faq from '../img/busicon/faq.png'
 
 
 const Home = () => {
@@ -82,7 +82,7 @@ const Home = () => {
                 <i className="far fa-angle-double-up" />
             </button>
             {/* back-to-top-end  */}
-            <Header/>
+            <Header />
             {/* tp-offcanvus-area-start */}
             <div className="tpoffcanvas-area">
                 <div className="tpoffcanvas">
@@ -127,7 +127,7 @@ const Home = () => {
                 <div id="smooth-content">
                     <main className="fix">
                         {/* tp-hero-area-start */}
-                        <div className="tp-hero-2__area tp-hero-2__ptb tp-hero-2__plr z-index fix p-relative" style={{backgroundImage: `url(${herobg2})`}}>
+                        <div className="tp-hero-2__area tp-hero-2__ptb tp-hero-2__plr z-index fix p-relative" style={{ backgroundImage: `url(${herobg2})` }}>
                             <div className="scroll-bg d-none d-sm-block">
                                 <img src={scrolldown} alt="" />
                             </div>
@@ -145,9 +145,9 @@ const Home = () => {
                                 <div className="row g-0 align-items-end">
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="tp-hero-2__title-box">
-                                            <h3 className="tp-hero-2__title tp-char-animation">Busicon Services <p style={{fontSize:'30px',letterSpacing:'1px',color:'white',lineHeight:'1.3',marginBottom:'20px',marginTop:'25px'}}>Your Collaborative Path to Funding Success.</p></h3>
+                                            <h3 className="tp-hero-2__title tp-char-animation">Busicon Services <p style={{ fontSize: '30px', letterSpacing: '1px', color: 'white', lineHeight: '1.3', marginBottom: '20px', marginTop: '25px' }}>Your Collaborative Path to Funding Success.</p></h3>
                                         </div>
-                                        <div className="tp-hero-2__btn" style={{marginBottom:'250px'}}>
+                                        <div className="tp-hero-2__btn" style={{ marginBottom: '250px' }}>
                                             <a className="tp-btn-green wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="service-details.html">Check out our services</a>
                                         </div>
                                         <div className="tp-hero-2__user p-relative">
@@ -165,7 +165,7 @@ const Home = () => {
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="tp-hero-2__right text-end p-relative">
                                             <div className="tp-hero-2__main-img wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-                                                <img src={homebg1} alt="" style={{height:'1000px',width:'700px',paddingBottom:'350px'}}/>
+                                                <img src={homebg1} alt="" style={{ height: '1000px', width: '700px', paddingBottom: '350px' }} />
                                             </div>
                                         </div>
                                     </div>
@@ -531,7 +531,7 @@ const Home = () => {
                             </div>
                         </div>
                         {/* tp-account-area-end */}
-                       
+
                         {/* tp-faq-area-start */}
                         <div className="tp-faq-area pt-140 pb-120 fix">
                             <div className="container">
@@ -539,15 +539,14 @@ const Home = () => {
                                     <div className="col-xl-6 col-lg-6">
                                         <div className="tp-faq-left-wrapper p-relative">
                                             <div className="tp-faq-section-box pb-20">
-                                                <h4 className="tp-section-subtitle-2">Support</h4>
                                                 <h3 className="tp-section-title-lg">Frequently <br /> Asked Questions</h3>
-                                                <p>Sed ut perspiciatis unde omnis iste natus error <br /> sit voluptatem accusantium.!</p>
+                                                <p>Check out the frequently asked questions and if you have a new query then send us one.</p>
                                             </div>
                                             <div className="tp-faq-btn">
-                                                <a className="tp-btn-green" href="contact.html">Get in Touch</a>
+                                                <a className="tp-btn-green" href="contact.html">Write a query</a>
                                             </div>
                                             <div className="tp-faq-img" data-parallax="{&quot;x&quot;: -50, &quot;smoothness&quot;: 30}">
-                                                <img src={faq1} alt="" />
+                                                <img src={faq} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -556,71 +555,66 @@ const Home = () => {
                                             <div className="accordion" id="accordionExample">
                                                 <div className="accordion-items">
                                                     <h2 className="accordion-header" id="headingOne">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            Why should I choose Softec?
+                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style={{lineHeight:'1.3'}}>
+                                                            Why should I choose Busicon?
                                                             <span className="accordion-btn" />
                                                         </button>
                                                     </h2>
                                                     <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
+                                                            Choose us for cutting-edge technological solutions addressing global financial issues. We're a one-stop shop for customer and financial institution needs, ensuring speed, safety, and legality through dedication, perfection, and trust.
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="accordion-items tp-faq-active">
+                                                <div className="accordion-items">
                                                     <h2 className="accordion-header" id="headingTwo">
-                                                        <button className="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                            Do I need to change banks?
+                                                        <button className="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{lineHeight:'1.3'}}>
+                                                            Do you believe you're ineligible for a loan after being declined by one or two banks?
                                                             <span className="accordion-btn" />
                                                         </button>
                                                     </h2>
                                                     <div id="collapseTwo" className="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
+                                                            Difficulty in effectively communicating needs and careless actions can lead to rejections. Unconventional factors may also play a role. We assist you in navigating the process successfully.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="accordion-items">
                                                     <h2 className="accordion-header" id="headingThree">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                            How can I order equipment?
+                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style={{lineHeight:'1.3'}}>
+                                                            Why is there a need for diversified services to obtain financing?
                                                             <span className="accordion-btn" />
                                                         </button>
                                                     </h2>
                                                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
+                                                            Currently, customers must navigate various professionals for documentation, making the process time-consuming. We provide a one-stop solution, streamlining registration, legal requirements, and more for efficient processing.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="accordion-items">
                                                     <h2 className="accordion-header" id="headingFour">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                            Do you offer volume discounts?
+                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style={{lineHeight:'1.3'}}>
+                                                            Why are people unaware of government benefit schemes?
                                                             <span className="accordion-btn" />
                                                         </button>
                                                     </h2>
                                                     <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
+                                                            Despite numerous programs launched by the Indian government, many remain unaware. This ignorance leads to rejection by banks. We aid citizens in accessing and maximizing these benefits, ensuring eligibility criteria are met.
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="accordion-items">
                                                     <h2 className="accordion-header" id="headingFive">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                            How does signing up work?
+                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style={{lineHeight:'1.3'}}>
+                                                            Is there any support available for customers facing financial fraud?
                                                             <span className="accordion-btn" />
                                                         </button>
                                                     </h2>
                                                     <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                                         <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
+                                                            With the rapid growth of financial lending, client scams have increased. Many face challenges repaying debts due to lack of knowledge. We ensure safety through our technology solutions, protecting clients from fraud and legal issues.
                                                         </div>
                                                     </div>
                                                 </div>
@@ -654,7 +648,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
             {/* JS here */}
         </div>
     );
