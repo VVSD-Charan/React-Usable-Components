@@ -146,7 +146,7 @@ const Home = () => {
                                             <h3 className="tp-hero-2__title tp-char-animation">Busicon Services <p style={{ fontSize: '30px', letterSpacing: '1px', color: 'white', lineHeight: '1.3', marginBottom: '20px', marginTop: '25px' }}>Your Collaborative Path to Funding Success.</p></h3>
                                         </div>
                                         <div className="tp-hero-2__btn" style={{ marginBottom: '250px' }}>
-                                            <a className="tp-btn-green wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="service-details.html">Check out our services</a>
+                                            <a className="tp-btn-green wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s" href="/services">Check out our services</a>
                                         </div>
                                         <div className="tp-hero-2__user p-relative">
                                             <h4 className="tp-char-animation-2">Over<span>5Ok+ Client</span> all over the world</h4>

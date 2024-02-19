@@ -9,6 +9,7 @@ import Services from './Services.js';
 import Agriloan from './services/Agriloan.js';
 import Team from './Team.js';
 import Contact from './Contact.js';
+import Partners from './Partners.js';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/services" element={<Services/>}/>
           <Route path="/agriculture-loan" element={<Agriloan/>}/>
           <Route path="/team" element={<Team/>}/>
+          <Route path="/partners" element={<Partners/>}/>
       </Routes>
     </BrowserRouter>
   );

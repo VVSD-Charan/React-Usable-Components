@@ -20,7 +20,7 @@ const Header = () => {
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li>
-                                                <a href="index.html">Home</a>
+                                                <a href="/">Home</a>
                                                 <ul className="submenu">
                                                     <li><a href="index.html">Data analytics</a></li>
                                                     <li><a href="index-2.html">Payment Gateway</a></li>

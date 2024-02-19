@@ -4,47 +4,15 @@ import Footer from './commons/Footer';
 import { rolesData } from './Data';
 import Allroles from './roles/Allroles';
 
+// Importing career Images
+import image1 from './img/career/image-1.png'
+import image2 from './img/career/image-2.png'
+import image3 from './img/career/image-3.png'
+import image4 from './img/career/image-4.png'
+
 const Careers = () => {
     return (
         <div>
-            {/* tp-offcanvus-area-start */}
-            <div className="tpoffcanvas-area">
-                <div className="tpoffcanvas">
-                    <div className="tpoffcanvas__close-btn">
-                        <button className="close-btn"><i className="fal fa-times" /></button>
-                    </div>
-                    <div className="tpoffcanvas__logo text-center">
-                        <a href="index.html">
-                            <img src="assets/img/logo/logo-white.png" alt="" />
-                        </a>
-                    </div>
-                    <div className="mobile-menu" />
-                    <div className="tpoffcanvas__instagram text-center">
-                        <div className="tpoffcanvas__instagram-title">
-                            <h4>instagram</h4>
-                        </div>
-                        <a href="#"><img src="assets/img/project/project-inner-4.jpg" alt="" /></a>
-                        <a href="#"><img src="assets/img/project/project-inner-5.jpg" alt="" /></a>
-                        <a href="#"><img src="assets/img/project/project-inner-6.jpg" alt="" /></a>
-                        <a href="#"><img src="assets/img/project/project-inner-7.jpg" alt="" /></a>
-                    </div>
-                    <div className="tpoffcanvas__info text-center">
-                        <h4 className="offcanva-title">we are here</h4>
-                        <a href="https://www.google.com/maps/@23.506657,90.3443647,7z" target="_blank">
-                            27 Division St, New York, <br />
-                            NY 10002, USA
-                        </a>
-                    </div>
-                    <div className="tpoffcanvas__social">
-                        <div className="social-icon text-center">
-                            <a href="#"><i className="fab fa-twitter" /></a>
-                            <a href="#"><i className="fab fa-instagram" /></a>
-                            <a href="#"><i className="fab fa-facebook-square" /></a>
-                            <a href="#"><i className="fab fa-dribbble" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="body-overlay" />
             {/* tp-offcanvus-area-end */}
             <Header />
@@ -81,20 +49,20 @@ const Careers = () => {
                                 <div className="row align-items-center">
                                     <div className="col-xl-3 col-lg-3 col-md-6">
                                         <div className="carrer-banner-img-item">
-                                            <img src="assets/img/career/image-1.png" alt="" />
+                                            <img src={image1} alt="" />
                                         </div>
                                     </div>
                                     <div className="col-xl-6 col-lg-6 col-md-6">
                                         <div className="carrer-banner-img-item parallax-main">
-                                            <img className="parallax-img" src="assets/img/career/image-2.png" alt="" data-parallax="{&quot;y&quot;: 300, &quot;smoothness&quot;: 10}" />
+                                            <img className="parallax-img" src={image2} alt="" data-parallax="{&quot;y&quot;: 300, &quot;smoothness&quot;: 10}" />
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-3 d-none d-lg-block">
                                         <div className="carrer-banner-img-item mb-20">
-                                            <img src="assets/img/career/image-3.png" alt="" />
+                                            <img src={image3} alt="" />
                                         </div>
                                         <div className="carrer-banner-img-item">
-                                            <img src="assets/img/career/image-4.png" alt="" />
+                                            <img src={image4} alt="" />
                                         </div>
                                     </div>
                                 </div>
