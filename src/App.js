@@ -8,12 +8,14 @@ import Manager from './roles/Manager.js';
 import Services from './Services.js';
 import Agriloan from './services/Agriloan.js';
 import Team from './Team.js';
+import Contact from './Contact.js';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
           <Route path="/" element={<Home />}/>
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="/careers" element={<Careers/>}/>
           <Route path="/careers-developer" element={<SDE/>}/>
           <Route path="/careers-manager" element={<Manager/>}/>
