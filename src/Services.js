@@ -35,6 +35,7 @@ import cardimg3 from './img/card/card-img-3.png'
 import cardimg4 from './img/card/card-img-4.png'
 import cardshape1 from './img/card/card-shape-1.png' 
 import cardbg from './img/card/card-bg.png'
+import Faq from './commons/Faq';
 
 const Services = () => {
     return (
@@ -383,109 +384,7 @@ const Services = () => {
                         {/* tp-sales-area-end */}
                     
                         {/* tp-faq-area-start */}
-                        <div className="tp-faq-area pt-140 pb-120">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
-                                        <div className="tp-faq-left-wrapper p-relative">
-                                            <div className="tp-faq-section-box tp-inner-font tp-inner-faq-box pb-20">
-                                                <h4 className="inner-section-subtitle">Support</h4>
-                                                <h3 className="tp-section-title">Frequently Asked Questions</h3>
-                                                <p>Sed ut perspiciatis unde omnis iste natus error <br /> sit voluptatem accusantium.!</p>
-                                            </div>
-                                            <div className="tp-faq-btn">
-                                                <a className="tp-btn-inner tp-btn-hover alt-color-black" href="contact.html">
-                                                    <span>Get in Touch</span>
-                                                    <b />
-                                                </a>
-                                            </div>
-                                            <div className="tp-faq-img">
-                                                <img src={faq1} alt="" />
-                                            </div>
-                                            <div className="tp-faq-border-shape d-none">
-                                                <img src={faqbordershape} alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-                                        <div className="tp-custom-accordion">
-                                            <div className="accordion tp-inner-font" id="accordionExample">
-                                                <div className="accordion-items">
-                                                    <h2 className="accordion-header" id="headingOne">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            Why should I choose Softec?
-                                                            <span className="accordion-btn" />
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="accordion-items tp-faq-active">
-                                                    <h2 className="accordion-header" id="headingTwo">
-                                                        <button className="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                            Do I need to change banks?
-                                                            <span className="accordion-btn" />
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseTwo" className="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                        <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="accordion-items">
-                                                    <h2 className="accordion-header" id="headingThree">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                            How can I order equipment?
-                                                            <span className="accordion-btn" />
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                                        <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="accordion-items">
-                                                    <h2 className="accordion-header" id="headingFour">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                            Do you offer volume discounts?
-                                                            <span className="accordion-btn" />
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                                        <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="accordion-items">
-                                                    <h2 className="accordion-header" id="headingFive">
-                                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                            How does signing up work?
-                                                            <span className="accordion-btn" />
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                                        <div className="accordion-body">
-                                                            The Softec Shop is built right into your account dashboard, and is accessible
-                                                            immediately after signing up.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Faq/>
                         {/* tp-faq-area-end */}
                         {/* tp-cta-area-start */}
                         <div className="tp-cta-area p-relative">

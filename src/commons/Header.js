@@ -47,7 +47,11 @@ const Header = () => {
                                             <li>
                                                 <a href="/services">Services</a>
                                                 <ul className="submenu">
-                                                    <li><a href="/agriculture-loan">Agriculture loans</a></li>
+                                                    <li><a href="#">Finance</a></li>
+                                                    <li><a href="#">Tax Compliances</a></li>
+                                                    <li><a href="#">Legalities</a></li>
+                                                    <li><a href="#">Collaboration</a></li>
+                                                    <li><a href="#">Business Management</a></li>
                                                     <li><a href="/services">All services</a></li>
                                                 </ul>
                                             </li>
