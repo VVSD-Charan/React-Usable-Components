@@ -56,11 +56,11 @@ import paylogo16 from '../img/payment-logo/logo-16.png'
 
 // Importing service images 
 import servbg21 from '../img/service/sv-bg-2-1.jpg'
-import servicon21 from '../img/service/sv-icon-2-1.png'
-import servicon22 from '../img/service/sv-icon-2-2.png'
-import servicon23 from '../img/service/sv-icon-2-3.png'
-import servicon24 from '../img/service/sv-icon-2-4.png'
 import Header from '../commons/Header'
+import finance from '../img/service/finance.png'
+import tax from '../img/service/tax.png'
+import legalities from '../img/service/legalities.png'
+import collaborations from '../img/service/collaborations.png'
 
 // Importing account images
 import accountbg from '../img/account/account-bg.png'
@@ -357,7 +357,8 @@ const Home = () => {
                                         <div className="tp-service-2__section-box">
                                             <h3 className="tp-section-title-lg pb-20">We provide the <br />
                                                 best service for you</h3>
-                                            <p>We've got all your payments covered</p>
+                                            <p>We operate with dedication, perfection,
+                                                responsibility, and trust.</p>
                                         </div>
                                     </div>
                                     <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".3s">
@@ -393,10 +394,10 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={servicon21} alt="" />
+                                                    <img src={finance} style={{height:'50px', width:'50px'}} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
-                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Online</a></h4>
+                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Finance</a></h4>
                                                     <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
@@ -407,10 +408,10 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={servicon22} alt="" />
+                                                    <img src={tax} style={{height:'50px', width:'50px'}} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
-                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Bank Transfers</a></h4>
+                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Tax Compliances</a></h4>
                                                     <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
@@ -421,10 +422,10 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={servicon23} alt="" />
+                                                    <img src={legalities} style={{height:'50px', width:'50px'}} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
-                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Keyed</a></h4>
+                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Legalities</a></h4>
                                                     <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
@@ -435,10 +436,10 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item  d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={servicon24} alt="" />
+                                                    <img src={collaborations} style={{height:'50px', width:'50px'}}  alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
-                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">In-Person</a></h4>
+                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Collaboration</a></h4>
                                                     <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
@@ -531,7 +532,7 @@ const Home = () => {
                         {/* tp-account-area-end */}
 
                         {/* tp-faq-area-start */}
-                        <Faq/>
+                        <Faq />
                         {/* tp-faq-area-end */}
                         {/* tp-cta-area-start */}
                         <div className="tp-cta-area p-relative">
