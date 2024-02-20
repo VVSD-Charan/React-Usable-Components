@@ -6,6 +6,7 @@ import homebg1 from '../img/busicon/homebg1.png'
 // Importing logos 
 import whiteLogo from '../img/logo/logo-white.png'
 import blackLogo from '../img/logo/logo-black.png'
+import downlogo from '../img/busicon/down-logo.png'
 
 // importing project imgs 
 import projectinner4 from '../img/project/project-inner-4.jpg'
@@ -274,7 +275,7 @@ const Home = () => {
                                         <div className="tp-payment-method__wrapper text-center p-relative">
                                             <div className="tp-payment-method__main-circle p-relative z-index">
                                                 <div className="tp-payment-method__main-img z-index-3">
-                                                    <img src={paylogomain} alt="" />
+                                                    <img src={downlogo} style={{height:'150px',width:'150px',backgroundColor:'white'}} alt="" />
                                                 </div>
                                                 <div className="tp-payment-method__line-1">
                                                     <div className="tp-payment-method__circle circle-1" />
