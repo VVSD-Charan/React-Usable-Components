@@ -62,7 +62,7 @@ const Contact = () => {
                         </div>
                         {/* tp-breadcrumb-header-area-end */}
                         {/* tp-contact-area-strat */}
-                        <div className="contact-info-area pb-90">
+                        {/* <div className="contact-info-area pb-90">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-xl-4 col-lg-4 mb-30">
@@ -106,7 +106,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="contact-form-area pb-120">
                             <div className="container">
                                 <div className="row gx-0">

@@ -35,6 +35,7 @@ import message from '../img/payment/message.png'
 import background from '../img/payment/background.png'
 import payimage from '../img/payment/image.png'
 import getpaid from '../img/payment/get-paid.png'
+import securebanking from '../img/payment/secure banking.png'
 
 // importing payment logo 
 import paylogomain from '../img/payment-logo/logo-main.png'
@@ -190,7 +191,7 @@ const Home = () => {
                                             <div className="col-md-6 mb-30">
                                                 <div className="tp-payment__item tp-payment__bg-color-2 p-relative z-index wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
                                                     <div className="tp-payment__shape-4">
-                                                        <img src={qrcode} alt="" />
+                                                        {/* <img src={qrcode} alt="" /> */}
                                                     </div>
                                                     <div className="tp-payment__shape-5">
                                                         <img src={mobile} alt="" />
@@ -205,10 +206,8 @@ const Home = () => {
                                                         <img src={coin2} alt="" />
                                                     </div>
                                                     <div className="tp-payment__content">
-                                                        <h3 className="tp-payment__title">Scan &amp; Go</h3>
-                                                        <p>Transform your payment link into a QR code
-                                                            that customers can scan with their <br />
-                                                            phone to pay.
+                                                        <h3 className="tp-payment__title">Why 99% Business loan Rejection</h3>
+                                                        <p>we make your business funding and business establishment easy.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -222,9 +221,10 @@ const Home = () => {
                                                         <img src={message} alt="" />
                                                     </div>
                                                     <div className="tp-payment__content">
-                                                        <h3 className="tp-payment__title">Easily Send Requesrs
-                                                            vai e-mail or SMS</h3>
-                                                        <p>... or copy-paste the link</p>
+                                                        <h3 className="tp-payment__title">Maximize Loan Benefits Efficiently </h3>
+                                                        <p>Missing your ideal lender  for your loan due to <br />rapid  expansion
+                                                            in Financial institutions.<br />now make
+                                                            it easy and save your money with <br /> lowest intrest rates and government benifits.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -238,14 +238,14 @@ const Home = () => {
                                             <div className="row">
                                                 <div className="col-md-6">
                                                     <div className="tp-payment__content tp-payment__content-space">
-                                                        <h3 className="tp-payment__title">Online Billing &amp; <br /> Invoicing Payments.</h3>
-                                                        <p>Get paid faster with Online Invoicing <br /> and the Virtual Terminal.</p>
-                                                        <a href="service-details.html">Explore Invoicing Tools<i className="far fa-arrow-right" /></a>
+                                                        <h3 className="tp-payment__title">Secure Banking Technology Solution</h3>
+                                                        <p>Avoid scams and frauds in Banking by any Third party brokers,<br/> Banks & NBFCs employees we are here to keep this process <br/> safe and secure through our technology solution</p>
+                                                        {/* <a href="service-details.html">Explore Invoicing Tools<i className="far fa-arrow-right" /></a> */}
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <div className="tp-payment__shape-2">
-                                                        <img src={payimage} alt="" />
+                                                        <img src={securebanking} style={{height:'400px',width:'400px'}} alt="" />
                                                     </div>
                                                     <div className="tp-payment__shape-3 d-none d-sm-block">
                                                         <img src={getpaid} alt="" />
@@ -275,71 +275,71 @@ const Home = () => {
                                         <div className="tp-payment-method__wrapper text-center p-relative">
                                             <div className="tp-payment-method__main-circle p-relative z-index">
                                                 <div className="tp-payment-method__main-img z-index-3">
-                                                    <img src={downlogo} style={{height:'150px',width:'150px',backgroundColor:'white'}} alt="" />
+                                                    <img src={downlogo} style={{ height: '150px', width: '150px', backgroundColor: 'white' }} alt="" />
                                                 </div>
                                                 <div className="tp-payment-method__line-1">
                                                     <div className="tp-payment-method__circle circle-1" />
-                                                    <span><img src={unionbank} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={unionbank} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-2 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-2" />
-                                                    <span><img src={axis} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={axis} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-3">
                                                     <div className="tp-payment-method__circle circle-3" />
-                                                    <span><img src={sbi} style={{height:'50px',width:'70px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={sbi} style={{ height: '50px', width: '70px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-4 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-4" />
-                                                    <span><img src={kotak} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={kotak} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-5">
                                                     <div className="tp-payment-method__circle circle-5" />
-                                                    <span><img src={icici} style={{height:'50px',width:'80px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={icici} style={{ height: '50px', width: '80px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-6 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-6" />
-                                                    <span><img src={hdfc} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={hdfc} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-7">
                                                     <div className="tp-payment-method__circle circle-7" />
-                                                    <span><img src={bom} style={{height:'60px',width:'60px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={bom} style={{ height: '60px', width: '60px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-8 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-8" />
-                                                    <span><img src={rbl} style={{height:'40px',width:'40px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={rbl} style={{ height: '40px', width: '40px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-9">
                                                     <div className="tp-payment-method__circle circle-9" />
-                                                    <span><img src={centralbank} style={{height:'55px',width:'90px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={centralbank} style={{ height: '55px', width: '90px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-10 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-10" />
-                                                    <span><img src={bob} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={bob} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-11">
                                                     <div className="tp-payment-method__circle circle-11" />
-                                                    <span><img src={punjab} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={punjab} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-12 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-12" />
-                                                    <span><img src={uco} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={uco} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-13">
                                                     <div className="tp-payment-method__circle circle-13" />
-                                                    <span><img src={idbi} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={idbi} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-14 d-none d-lg-block">
                                                     <div className="tp-payment-method__circle circle-14" />
-                                                    <span><img src={gayathri} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={gayathri} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-15">
                                                     <div className="tp-payment-method__circle circle-15" />
-                                                    <span><img src={fino} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={fino} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                                 <div className="tp-payment-method__line-16">
                                                     <div className="tp-payment-method__circle circle-16" />
-                                                    <span><img src={canara} style={{height:'50px',width:'50px', backgroundColor:'white'}} alt="" /></span>
+                                                    <span><img src={canara} style={{ height: '50px', width: '50px', backgroundColor: 'white' }} alt="" /></span>
                                                 </div>
                                             </div>
                                         </div>
@@ -349,7 +349,7 @@ const Home = () => {
                         </div>
                         {/* tp-payment-method-area-end */}
                         {/* tp-service-area-end */}
-                        <div className="tp-service-2__area p-relative pt-70 pb-160">
+                        <div className="tp-service-2__area p-relative pt-70 pb-10">
                             <div className="tp-service-2__shape">
                                 <img src={servbg21} alt="" />
                             </div>
@@ -396,7 +396,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={finance} style={{height:'50px', width:'50px'}} alt="" />
+                                                    <img src={finance} style={{ height: '50px', width: '50px' }} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Finance</a></h4>
@@ -410,7 +410,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={tax} style={{height:'50px', width:'50px'}} alt="" />
+                                                    <img src={tax} style={{ height: '50px', width: '50px' }} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Tax Compliances</a></h4>
@@ -424,7 +424,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={legalities} style={{height:'50px', width:'50px'}} alt="" />
+                                                    <img src={legalities} style={{ height: '50px', width: '50px' }} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Legalities</a></h4>
@@ -438,7 +438,7 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item  d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={collaborations} style={{height:'50px', width:'50px'}}  alt="" />
+                                                    <img src={collaborations} style={{ height: '50px', width: '50px' }} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Collaboration</a></h4>
@@ -449,90 +449,9 @@ const Home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="row justify-content-center">
-                                    <div className="col-xl-10 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                                        <div className="tp-service-2__bottom-wrapper p-relative mt-30">
-                                            <div className="tp-service-2__feature-item">
-                                                <h4 className="tp-service-2__feature-title">More free tools than you can handle</h4>
-                                                <div className="tp-service-2__feature-box d-flex justify-content-between">
-                                                    <div className="tp-service-2__feature-list">
-                                                        <ul>
-                                                            <li>Invoicing</li>
-                                                            <li>Online Checkout</li>
-                                                            <li>Point-of-Sale</li>
-                                                            <li>Online Food Ordering</li>
-                                                            <li>ICard Vault</li>
-                                                            <li>Customer Portal</li>
-                                                            <li>Inventory</li>
-                                                            <li>Virtual Terminal</li>
-                                                            <li>Recurring Plans</li>
-                                                            <li>Payment Links</li>
-                                                            <li>SMS Payments</li>
-                                                            <li>QR Codes</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         {/* tp-service-area-end */}
-                        {/* tp-account-area-strat */}
-                        <div className="tp-account-area pb-120">
-                            <div className="container">
-                                <div className="row align-items-center">
-                                    <div className="col-xl-6 col-lg-6">
-                                        <div className="tp-account-thumb-wrapper p-relative text-center wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
-                                            <div className="tp-account-bg">
-                                                <img src={accountbg} alt="" />
-                                            </div>
-                                            <div className="tp-account-main-img">
-                                                <img src={accmain} alt="" />
-                                            </div>
-                                            <div className="tp-account-author">
-                                                <img src={acauthor} alt="" />
-                                            </div>
-                                            <div className="tp-account-shape-1">
-                                                <img src={acshape1} alt="" />
-                                            </div>
-                                            <div className="tp-account-shape-2">
-                                                <img src={acshape2} alt="" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-6 col-lg-6">
-                                        <div className="tp-account-step-wrapper">
-                                            <div className="tp-account-section-box mb-40">
-                                                <h4 className="tp-section-subtitle-2">Open An Account</h4>
-                                                <h3 className="tp-section-title-lg">Let’s get started</h3>
-                                            </div>
-                                            <div className="tp-account-step mb-50">
-                                                <div className="tp-account-item d-flex align-items-center">
-                                                    <span>01</span>
-                                                    <p>Sign up in a few minutes</p>
-                                                </div>
-                                                <div className="tp-account-item d-flex align-items-center">
-                                                    <span>02</span>
-                                                    <p>Let us verify your identity</p>
-                                                </div>
-                                                <div className="tp-account-item d-flex align-items-center">
-                                                    <span>03</span>
-                                                    <p>Your account is open; you can send <br /> your first payment</p>
-                                                </div>
-                                            </div>
-                                            <div className="tp-account-btn-box">
-                                                <a className="tp-btn-green mb-15" href="register.html">Open An Account in Minutes</a>
-                                                <p>Try it for 30 days. For free. No obligations.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* tp-account-area-end */}
-
                         {/* tp-faq-area-start */}
                         <Faq />
                         {/* tp-faq-area-end */}

@@ -6,10 +6,14 @@ import './App.css';
 import SDE from './roles/SDE.js';
 import Manager from './roles/Manager.js';
 import Services from './Services.js';
-import Agriloan from './services/Agriloan.js';
+import Tax from './services/Tax.js';
 import Team from './Team.js';
 import Contact from './Contact.js';
 import Partners from './Partners.js';
+import Finance from './services/Finance.js'
+import Legalities from './services/Legalities.js'
+import Collaborations from './services/Collaborations.js';
+import Business from './services/Business.js';
 
 function App() {
   return (
@@ -21,7 +25,11 @@ function App() {
           <Route path="/careers-developer" element={<SDE/>}/>
           <Route path="/careers-manager" element={<Manager/>}/>
           <Route path="/services" element={<Services/>}/>
-          <Route path="/agriculture-loan" element={<Agriloan/>}/>
+          <Route path="/tax" element={<Tax/>}/>
+          <Route path="/finance" element={<Finance/>}/>
+          <Route path="/legalities" element={<Legalities/>}/>
+          <Route path="/collaborations" element={<Collaborations/>}/>
+          <Route path="/business" element={<Business/>}/>
           <Route path="/team" element={<Team/>}/>
           <Route path="/partners" element={<Partners/>}/>
       </Routes>

@@ -13,7 +13,7 @@ import svdashboard from '../img/service/sv-dashbord.png'
 import svdetails from '../img/service/sv-details-1.jpg'
 import svbg from '../img/service/sv-bg.jpg'
 
-const Agriloan = () => {
+const Tax = () => {
     return (
         <div>
             {/* back-to-top-start  */}
@@ -110,19 +110,19 @@ const Agriloan = () => {
                                                 <div className="sv-details-category-list">
                                                     <ul>
                                                         <li>
-                                                            <a href="#"><span>Branding</span><i className="fal fa-angle-right" /></a>
-                                                        </li>
-                                                        <li className="active">
-                                                            <a href="#"><span>Web Design</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="#"><span>Finance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Mobile Application</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="#"><span>Tax Compliances</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Development</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="#"><span>Legalities</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Illusutration</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="#"><span>Collaboration</span><i className="fal fa-angle-right" /></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"><span>Business Management</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -290,4 +290,4 @@ const Agriloan = () => {
         </div>
     );
 }
-export default Agriloan
+export default Tax
