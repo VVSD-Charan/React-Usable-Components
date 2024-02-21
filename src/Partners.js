@@ -1,14 +1,22 @@
 import React from 'react'
+import Header from './commons/Header'
+import Footer from './commons/Footer'
 
 const Partners = () => {
     return (
-
+    <div>
+        <button className="scroll-top scroll-to-target tp-style-green" data-target="html">
+                <i className="far fa-angle-double-up" />
+            </button>
+            {/* back-to-top-end  */}
+            <Header />
         <div id="smooth-wrapper">
             <div id="smooth-content">
                 <main>
+
                     {/* breadcrumb-area-start */}
                     <div className="breadcrumb__area breadcrumb-height-2 breadcrumb-overlay p-relative fix" data-background="assets/img/project/project-brdcrmb-bg.jpg">
-                        <div className="breadcrumb__shape-2 z-index-4">
+                        {/* <div className="breadcrumb__shape-2 z-index-4">
                             <img src="assets/img/breadcrumb/breadcrumb-shape-2-2.png" alt="" />
                         </div>
                         <div className="breadcrumb__shape-3 z-index-4">
@@ -16,8 +24,8 @@ const Partners = () => {
                         </div>
                         <div className="breadcrumb__shape-4 z-index-4">
                             <img src="assets/img/breadcrumb/breadcrumb-sub-3.png" alt="" />
-                        </div>
-                        <div className="container">
+                        </div> */}
+                        <div className="container" style={{backgroundColor:'blue'}}>
                             <div className="row justify-content-center">
                                 <div className="col-xl-10">
                                     <div className="breadcrumb__content z-index-3 text-center">
@@ -213,6 +221,7 @@ const Partners = () => {
                 </main>
             </div>
         </div>
+    </div>
     );
 }
 export default Partners
