@@ -62,7 +62,7 @@ const Legalities = () => {
             </div>
             <div className="body-overlay" />
             {/* tp-offcanvus-area-end */}
-            <Header/>
+            <Header />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
@@ -80,9 +80,11 @@ const Legalities = () => {
                                         <div className="breadcrumb__content">
                                             <h3 className="breadcrumb__title tp-char-animation">Web Design</h3>
                                             <div className="breadcrumb__list tp-title-anim">
-                                                <span className="child-one"><a href="#">Home</a></span>
+                                                <span className="child-one"><a href="/">Home</a></span>
                                                 <span className="dvdr"><i className="fal fa-angle-right" /></span>
-                                                <span>Help Desk Service Details</span>
+                                                <span className="child-one"><a href="/services">Services</a></span>
+                                                <span className="dvdr"><i className="fal fa-angle-right" /></span>
+                                                <span>Legalities</span>
                                             </div>
                                         </div>
                                     </div>
@@ -111,19 +113,19 @@ const Legalities = () => {
                                                 <div className="sv-details-category-list">
                                                     <ul>
                                                         <li>
-                                                            <a href="#"><span>Finance</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/finance"><span>Finance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Insurance</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/insurance"><span>Insurance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li className='active'>
                                                             <a href="#"><span>Legalities</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Collaboration</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="collaborations"><span>Collaboration</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Business Management</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/business"><span>Business Management</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -283,10 +285,10 @@ const Legalities = () => {
                                 </div>
                             </div>
                         </div>
-                        <Faq/>
+                        <Faq />
                         {/* service-details-area-end */}
                     </main>
-                    <Footer/>
+                    <Footer />
                 </div>
             </div>
         </div>

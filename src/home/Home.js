@@ -401,7 +401,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Finance</a></h4>
-                                                    <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
+                                                    <a className="tp-service-2__link" href="/finance">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
                                             <div className="tp-service-2__bg-shape" />
@@ -415,7 +415,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Insurance</a></h4>
-                                                    <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
+                                                    <a className="tp-service-2__link" href="/insurance">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
                                             <div className="tp-service-2__bg-shape tp-service-2__color-2" />
@@ -429,7 +429,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Legalities</a></h4>
-                                                    <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
+                                                    <a className="tp-service-2__link" href="/legalities">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
                                             <div className="tp-service-2__bg-shape tp-service-2__color-3" />
@@ -443,7 +443,7 @@ const Home = () => {
                                                 </div>
                                                 <div className="tp-service-2__text">
                                                     <h4 className="tp-service-2__title-sm"><a href="service-details.html">Collaboration</a></h4>
-                                                    <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
+                                                    <a className="tp-service-2__link" href="/collaborations">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>
                                             <div className="tp-service-2__bg-shape tp-service-2__color-4" />
