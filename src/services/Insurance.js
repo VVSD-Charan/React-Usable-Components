@@ -13,7 +13,7 @@ import svdashboard from '../img/service/sv-dashbord.png'
 import svdetails from '../img/service/sv-details-1.jpg'
 import svbg from '../img/service/sv-bg.jpg'
 
-const Tax = () => {
+const Insurance = () => {
     return (
         <div>
             {/* back-to-top-start  */}
@@ -112,8 +112,8 @@ const Tax = () => {
                                                         <li>
                                                             <a href="#"><span>Finance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#"><span>Tax Compliances</span><i className="fal fa-angle-right" /></a>
+                                                        <li className='active'>
+                                                            <a href="#"><span>Insurance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
                                                             <a href="#"><span>Legalities</span><i className="fal fa-angle-right" /></a>
@@ -290,4 +290,4 @@ const Tax = () => {
         </div>
     );
 }
-export default Tax
+export default Insurance

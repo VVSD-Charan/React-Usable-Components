@@ -113,7 +113,7 @@ const Business = () => {
                                                             <a href="#"><span>Finance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Tax Compliances</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="#"><span>Insurance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
                                                             <a href="#"><span>Legalities</span><i className="fal fa-angle-right" /></a>
@@ -121,7 +121,7 @@ const Business = () => {
                                                         <li>
                                                             <a href="#"><span>Collaboration</span><i className="fal fa-angle-right" /></a>
                                                         </li>
-                                                        <li>
+                                                        <li className='active'>
                                                             <a href="#"><span>Business Management</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                     </ul>

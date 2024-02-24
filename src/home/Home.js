@@ -62,6 +62,7 @@ import servbg21 from '../img/service/sv-bg-2-1.jpg'
 import Header from '../commons/Header'
 import finance from '../img/service/finance.png'
 import tax from '../img/service/tax.png'
+import insurance from '../img/service/insurance.png'
 import legalities from '../img/service/legalities.png'
 import collaborations from '../img/service/collaborations.png'
 
@@ -410,10 +411,10 @@ const Home = () => {
                                         <div className="tp-service-2__item-wrapper p-relative">
                                             <div className="tp-service-2__item d-flex justify-content-between flex-column">
                                                 <div className="tp-service-2__icon">
-                                                    <img src={tax} style={{ height: '50px', width: '50px' }} alt="" />
+                                                    <img src={insurance} style={{ height: '50px', width: '50px' }} alt="" />
                                                 </div>
                                                 <div className="tp-service-2__text">
-                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Tax Compliances</a></h4>
+                                                    <h4 className="tp-service-2__title-sm"><a href="service-details.html">Insurance</a></h4>
                                                     <a className="tp-service-2__link" href="service-details.html">Explore<i className="far fa-arrow-right" /></a>
                                                 </div>
                                             </div>

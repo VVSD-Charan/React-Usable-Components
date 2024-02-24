@@ -5,7 +5,7 @@ import faq from '../img/busicon/faq.png'
 
 const Faq = () => {
     return (
-        <div className="tp-faq-area pt-140 pb-120 fix">
+        <div className="tp-faq-area pt-20 pb-120 fix">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">

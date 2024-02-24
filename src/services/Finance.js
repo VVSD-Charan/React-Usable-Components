@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../commons/Header';
 import Footer from '../commons/Footer';
+import Faq from '../commons/Faq'
 
 // Importing breadcrumb images
 import breadcrumbshape1 from '../img/breadcrumb/breadcrumb-shape-1.png'
@@ -61,7 +62,7 @@ const Finance = () => {
             </div>
             <div className="body-overlay" />
             {/* tp-offcanvus-area-end */}
-            <Header/>
+            <Header />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
@@ -98,7 +99,7 @@ const Finance = () => {
                         </div>
                         {/* breadcrumb-area-end */}
                         {/* service-details-area-start */}
-                        <div className="sv-details-area sv-details-space pt-100 pb-100">
+                        <div className="sv-details-area sv-details-space pt-100">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-xl-4 col-lg-4">
@@ -109,11 +110,11 @@ const Finance = () => {
                                                 </div>
                                                 <div className="sv-details-category-list">
                                                     <ul>
-                                                        <li>
+                                                        <li className='active'>
                                                             <a href="#"><span>Finance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Tax Compliances</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="#"><span>Insurance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
                                                             <a href="#"><span>Legalities</span><i className="fal fa-angle-right" /></a>
@@ -127,7 +128,7 @@ const Finance = () => {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="tp-service__dashboard mb-30" data-background={svbg}>
+                                            <div className="tp-service__dashboard" data-background={svbg}>
                                                 <div className="tp-service__top-content">
                                                     <h3 className="tp-service__title-white">Data Analysis <br /> Tools &amp; Methods</h3>
                                                     <p>Lorem Ipsum is simply dummy text <br /> of the printing</p>
@@ -140,7 +141,7 @@ const Finance = () => {
                                                     <img className="wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".3s" src={svdashboard} alt="" />
                                                 </div>
                                             </div>
-                                            <div className="sv-details-social-box mb-30">
+                                            {/* <div className="sv-details-social-box mb-10">
                                                 <h4 className="sv-details-title-sm">Share it.</h4>
                                                 <div className="sv-details-social-link">
                                                     <a href="#"><i className="fab fa-facebook-f" /></a>
@@ -148,12 +149,12 @@ const Finance = () => {
                                                     <a href="#"><i className="fab fa-instagram" /></a>
                                                     <a href="#"><i className="fab fa-youtube" /></a>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <div className="col-xl-8 col-lg-8">
                                         <div className="sv-details-wrapper">
-                                            <div className="sv-details-thumb mb-45">
+                                            <div className="sv-details-thumb mb-10">
                                                 <img className="w-100" src={svdetails} alt="" />
                                             </div>
                                             <div className="sv-details-title-box mb-55">
@@ -194,7 +195,10 @@ const Finance = () => {
                                                     orci at dapibus, massa ante pharetra tellus. Maecenas interdum, orci at euismod
                                                     dapibus. Lorem ipsum dolor sit amet.!</p>
                                             </div>
-                                            <div className="tp-faq-area pt-50">
+
+
+                                            {/* <div className="tp-faq-area pt-50">
+                                        
                                                 <div className="container p-0">
                                                     <div className="row g-0">
                                                         <div className="col-xl-12">
@@ -275,16 +279,17 @@ const Finance = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
+                                                </div> 
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <Faq/>
                         {/* service-details-area-end */}
                     </main>
-                    <Footer/>
+                    <Footer />
                 </div>
             </div>
         </div>
