@@ -40,12 +40,12 @@ const Faq = () => {
                                 </div>
                                 <div className="accordion-items">
                                     <h2 className="accordion-header" id="headingTwo">
-                                        <button className="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{ lineHeight: '1.3' }}>
+                                        <button className="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{ lineHeight: '1.3' }}>
                                             Do you believe you're ineligible for a loan after being declined by one or two banks?
                                             <span className="accordion-btn" />
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" className="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="collapseTwo" className="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
                                             Difficulty in effectively communicating needs and careless actions can lead to rejections. Unconventional factors may also play a role. We assist you in navigating the process successfully.
                                         </div>

@@ -12,6 +12,7 @@ import breadcrumb3 from '../img/breadcrumb/breadcrumb-3.png'
 import svdashboard from '../img/service/sv-dashbord.png'
 import svdetails from '../img/service/sv-details-1.jpg'
 import svbg from '../img/service/sv-bg.jpg'
+import Faq from '../commons/Faq';
 
 const Insurance = () => {
     return (
@@ -127,7 +128,7 @@ const Insurance = () => {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="tp-service__dashboard mb-30" data-background={svbg}>
+                                            <div className="tp-service__dashboard" data-background={svbg}>
                                                 <div className="tp-service__top-content">
                                                     <h3 className="tp-service__title-white">Data Analysis <br /> Tools &amp; Methods</h3>
                                                     <p>Lorem Ipsum is simply dummy text <br /> of the printing</p>
@@ -140,7 +141,7 @@ const Insurance = () => {
                                                     <img className="wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".3s" src={svdashboard} alt="" />
                                                 </div>
                                             </div>
-                                            <div className="sv-details-social-box mb-30">
+                                            {/* <div className="sv-details-social-box mb-30">
                                                 <h4 className="sv-details-title-sm">Share it.</h4>
                                                 <div className="sv-details-social-link">
                                                     <a href="#"><i className="fab fa-facebook-f" /></a>
@@ -148,7 +149,7 @@ const Insurance = () => {
                                                     <a href="#"><i className="fab fa-instagram" /></a>
                                                     <a href="#"><i className="fab fa-youtube" /></a>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <div className="col-xl-8 col-lg-8">
@@ -194,7 +195,7 @@ const Insurance = () => {
                                                     orci at dapibus, massa ante pharetra tellus. Maecenas interdum, orci at euismod
                                                     dapibus. Lorem ipsum dolor sit amet.!</p>
                                             </div>
-                                            <div className="tp-faq-area pt-50">
+                                            {/* <div className="tp-faq-area pt-50">
                                                 <div className="container p-0">
                                                     <div className="row g-0">
                                                         <div className="col-xl-12">
@@ -276,13 +277,14 @@ const Insurance = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* service-details-area-end */}
+                        <Faq/>
                     </main>
                     <Footer/>
                 </div>
