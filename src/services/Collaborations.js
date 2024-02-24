@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../commons/Header';
 import Footer from '../commons/Footer';
+import Faq from '../commons/Faq'
 
 // Importing breadcrumb images
 import breadcrumbshape1 from '../img/breadcrumb/breadcrumb-shape-1.png'
@@ -79,9 +80,11 @@ const Collaborations = () => {
                                         <div className="breadcrumb__content">
                                             <h3 className="breadcrumb__title tp-char-animation">Web Design</h3>
                                             <div className="breadcrumb__list tp-title-anim">
-                                                <span className="child-one"><a href="#">Home</a></span>
+                                                <span className="child-one"><a href="/">Home</a></span>
                                                 <span className="dvdr"><i className="fal fa-angle-right" /></span>
-                                                <span>Help Desk Service Details</span>
+                                                <span className="child-one"><a href="/services">Services</a></span>
+                                                <span className="dvdr"><i className="fal fa-angle-right" /></span>
+                                                <span>Collaborations</span>
                                             </div>
                                         </div>
                                     </div>
@@ -110,24 +113,24 @@ const Collaborations = () => {
                                                 <div className="sv-details-category-list">
                                                     <ul>
                                                         <li>
-                                                            <a href="#"><span>Finance</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/finance"><span>Finance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Tax Compliances</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/insurance"><span>Insurance</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Legalities</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/legalities"><span>Legalities</span><i className="fal fa-angle-right" /></a>
                                                         </li>
-                                                        <li>
+                                                        <li className='active'>
                                                             <a href="#"><span>Collaboration</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                         <li>
-                                                            <a href="#"><span>Business Management</span><i className="fal fa-angle-right" /></a>
+                                                            <a href="/business"><span>Business Management</span><i className="fal fa-angle-right" /></a>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="tp-service__dashboard mb-30" data-background={svbg}>
+                                            <div className="tp-service__dashboard" data-background={svbg}>
                                                 <div className="tp-service__top-content">
                                                     <h3 className="tp-service__title-white">Data Analysis <br /> Tools &amp; Methods</h3>
                                                     <p>Lorem Ipsum is simply dummy text <br /> of the printing</p>
@@ -140,7 +143,7 @@ const Collaborations = () => {
                                                     <img className="wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".3s" src={svdashboard} alt="" />
                                                 </div>
                                             </div>
-                                            <div className="sv-details-social-box mb-30">
+                                            {/* <div className="sv-details-social-box mb-30">
                                                 <h4 className="sv-details-title-sm">Share it.</h4>
                                                 <div className="sv-details-social-link">
                                                     <a href="#"><i className="fab fa-facebook-f" /></a>
@@ -148,7 +151,7 @@ const Collaborations = () => {
                                                     <a href="#"><i className="fab fa-instagram" /></a>
                                                     <a href="#"><i className="fab fa-youtube" /></a>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <div className="col-xl-8 col-lg-8">
@@ -194,7 +197,7 @@ const Collaborations = () => {
                                                     orci at dapibus, massa ante pharetra tellus. Maecenas interdum, orci at euismod
                                                     dapibus. Lorem ipsum dolor sit amet.!</p>
                                             </div>
-                                            <div className="tp-faq-area pt-50">
+                                            {/* <div className="tp-faq-area pt-50">
                                                 <div className="container p-0">
                                                     <div className="row g-0">
                                                         <div className="col-xl-12">
@@ -276,12 +279,13 @@ const Collaborations = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <Faq />
                         {/* service-details-area-end */}
                     </main>
                     <Footer/>
