@@ -75,6 +75,9 @@ import acshape2 from '../img/account/ac-shape-2.png'
 import Footer from '../commons/Footer'
 import Faq from '../commons/Faq'
 
+// Importing cta images 
+import ctabg from '../img/cta/cta-bg.jpg'
+
 
 const Home = () => {
     return (
@@ -462,12 +465,12 @@ const Home = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="tp-cta-bg" data-background="assets/img/cta/cta-bg.jpg">
+                                        <div className="tp-cta-bg" style={{background:`url(${ctabg})`}}>
                                             <div className="tp-cta-content text-center">
                                                 <h3 className="tp-section-title-lg text-white">Try our service now!</h3>
                                                 <p>Eyerything you need to accept cord payments and grow your business <br />
                                                     anywhere on the planet.</p>
-                                                <a className="tp-btn-green" href="service-details.html">Get Started Now</a>
+                                                <a className="tp-btn-green" href="/services">Try our services</a>
                                             </div>
                                         </div>
                                     </div>

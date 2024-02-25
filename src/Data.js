@@ -54,3 +54,70 @@ export const team = [
         role : "HR team"
     },
 ]
+
+export const bankdata = [
+    {
+        name : 'Union Bank',
+        img : 'unionbank'
+    },
+    {
+        name : 'SBI',
+        img : 'sbi'
+    },
+    {
+        name : 'Axis',
+        img : 'AXISBANK.BO'
+    },
+    {
+        name : 'ICICI',
+        img : 'icici'
+    },
+    {
+        name : 'HDFC',
+        img : 'hdfc'
+    },
+    {
+        name : 'Kotak Mahindra Bank',
+        img : 'kotak'
+    },
+    {
+        name : 'Central Bank',
+        img : 'centralbank'
+    },
+    {
+        name : 'Canara Bank',
+        img : 'canara bank'
+    },
+    {
+        name : 'Fino Bank',
+        img : 'fino'
+    },
+    {
+        name : 'Bank of Baroda',
+        img : 'Bank-of-Baroda'
+    },
+    {
+        name : 'Bank of Maharashtra',
+        img : 'bank of maharashtra'
+    },
+    {
+        name : 'UCO',
+        img : 'uco'
+    },
+    {
+        name : 'IDBI',
+        img : 'idbi'
+    },
+    {
+        name : 'Punjab National Bank',
+        img : 'punjab national'
+    },
+    {
+        name : 'RBL',
+        img : 'rbl'
+    },
+    {
+        name : 'Gayahtri Bank',
+        img : 'gayathri'
+    }
+]

@@ -3,6 +3,9 @@ import Header from './commons/Header';
 import Footer from './commons/Footer';
 import { team } from './Data';
 
+// Importing cta images 
+import ctabg from './img/cta/cta-bg.jpg'
+
 const Team = () => {
     return (
         <div>
@@ -146,12 +149,11 @@ const Team = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="tp-cta-bg" data-background="assets/img/cta/cta-bg.jpg">
+                                        <div className="tp-cta-bg" style={{background:`url(${ctabg})`}}>
                                             <div className="tp-cta-content tp-inner-font text-center">
-                                                <h3 className="tp-section-title text-white">Try our service now!</h3>
-                                                <p>Eyerything you need to accept cord payments and grow your business <br />
-                                                    anywhere on the planet.</p>
-                                                <a className="tp-btn-inner white-bg text-black" href="service-details.html">Get Started Now</a>
+                                                <h3 className="tp-section-title text-white">Start your career with us.</h3>
+                                                <p>Join our team of passionate people who work hard to impact lives of people.</p>
+                                                <a className="tp-btn-inner white-bg text-black" href="/careers">Join our team</a>
                                             </div>
                                         </div>
                                     </div>

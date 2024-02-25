@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="tp-header-height">
                 {/* tp-header-area-start */}
-                <div id="header-sticky" className="tp-header-2__area header-sticky-bg-2 tp-header-2__transparent tp-header-2__plr z-index-3">
+                <div id="header-sticky" className="tp-header-2__area header-sticky-bg-2 tp-header-2__transparent tp-header-2__plr z-index-6">
                     <div className="container-fluid g-0">
                         <div className="row g-0 align-items-center">
                             <div className="col-xl-2 col-lg-2 col-md-6 col-6">
@@ -21,13 +21,6 @@ const Header = () => {
                                         <ul>
                                             <li>
                                                 <a href="/">Home</a>
-                                                <ul className="submenu">
-                                                    <li><a href="index.html">Data analytics</a></li>
-                                                    <li><a href="index-2.html">Payment Gateway</a></li>
-                                                    <li><a href="index-3.html">CRM Software</a></li>
-                                                    <li><a href="index-4.html">Security Software</a></li>
-                                                    <li><a href="index-5.html">Saas</a></li>
-                                                </ul>
                                             </li>
                                             <li>
                                                 <a href="#">Pages</a>
