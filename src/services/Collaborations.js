@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../commons/Header';
 import Footer from '../commons/Footer';
 import Faq from '../commons/Faq'
+import collaborationsimage from '../img/lono-services/collaboration.jpg'
 
 // Importing breadcrumb images
 import breadcrumbshape1 from '../img/breadcrumb/breadcrumb-shape-1.png'
@@ -62,7 +63,7 @@ const Collaborations = () => {
             </div>
             <div className="body-overlay" />
             {/* tp-offcanvus-area-end */}
-            <Header/>
+            <Header />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
@@ -78,7 +79,7 @@ const Collaborations = () => {
                                 <div className="row">
                                     <div className="col-xl-8 col-lg-7">
                                         <div className="breadcrumb__content">
-                                            <h3 className="breadcrumb__title tp-char-animation">Web Design</h3>
+                                            <h3 className="breadcrumb__title tp-char-animation">Collaborations</h3>
                                             <div className="breadcrumb__list tp-title-anim">
                                                 <span className="child-one"><a href="/">Home</a></span>
                                                 <span className="dvdr"><i className="fal fa-angle-right" /></span>
@@ -157,45 +158,51 @@ const Collaborations = () => {
                                     <div className="col-xl-8 col-lg-8">
                                         <div className="sv-details-wrapper">
                                             <div className="sv-details-thumb mb-45">
-                                                <img className="w-100" src={svdetails} alt="" />
+                                                <img className="w-100" src={collaborationsimage} alt="" />
                                             </div>
                                             <div className="sv-details-title-box mb-55">
                                                 <h4 className="sv-details-title">Service Overview</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum, orci at
-                                                    dapibus, massa ante pharetra tellus. Maecenas interdum, orci at euismod dapibus.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                <p>Our company offers a comprehensive solution to the challenges faced in establishing a business by integrating various
+                                                    supply chain elements.We streamline the process of finding cost-effective machine manufacturers,
+                                                    distribution providers, and raw material suppliers across different states, eliminating the hassle of
+                                                    extensive research and travel expenses. With our platform, businesses can easily identify authorized sellers offering the best quality and services,
+                                                    facilitating faster collaboration and trust-building with banks for loan approval. Moreover, we provide lifelong support
+                                                    post-business execution, ensuring a smooth entrepreneurial journey. Our one-stop solution aims to simplify the establishment of new
+                                                    enterprises, addressing key barriers and fostering efficient collaborations in the market.
+                                                </p>
                                             </div>
                                             <div className="sv-details-text mb-35">
-                                                <h4 className="sv-details-text-title pb-10">Going Beyond the Usual</h4>
+                                                <h4 className="sv-details-text-title pb-10">Products</h4>
                                                 <ul>
                                                     <li>
                                                         <i className="fal fa-check" />
-                                                        <p>
-                                                            Product Quality: <br />
-                                                            <span>Automatically syncs across all your devices. You can also access....</span>
-                                                        </p>
+                                                        <p>Machines</p>
                                                     </li>
                                                     <li>
                                                         <i className="fal fa-check" />
-                                                        <p>
-                                                            On Demand Design: <br />
-                                                            <span>Images, videos, PDFs and audio files are supported.</span>
-                                                        </p>
+                                                        <p>Raw materials</p>
                                                     </li>
                                                     <li>
                                                         <i className="fal fa-check" />
-                                                        <p>
-                                                            Choice of Service:
-                                                            <span>Whatever your business needs, you can choose a service.</span>
-                                                        </p>
+                                                        <p>Distribution</p>
+                                                    </li>
+                                                    <li>
+                                                        <i className="fal fa-check" />
+                                                        <p>Dealership</p>
+                                                    </li>
+                                                    <li>
+                                                        <i className="fal fa-check" />
+                                                        <p>Franchise</p>
+                                                    </li>
+                                                    <li>
+                                                        <i className="fal fa-check" />
+                                                        <p>Trader</p>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <div className="sv-details-text-2">
                                                 <h4 className="sv-details-text-title">The Challange</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum,
-                                                    orci at dapibus, massa ante pharetra tellus. Maecenas interdum, orci at euismod
-                                                    dapibus. Lorem ipsum dolor sit amet.!</p>
+                                                <p>Difficulty in accessing and collaborating with various businesses across the supply chain hampers successful business establishment. Our company offers a one-stop solution, integrating supply chains to streamline sourcing, ensuring quality, cost-effectiveness, and service reliability. We provide ongoing support, simplifying business execution and fostering trust in loan approval processes.</p>
                                             </div>
                                             {/* <div className="tp-faq-area pt-50">
                                                 <div className="container p-0">
@@ -288,7 +295,7 @@ const Collaborations = () => {
                         <Faq />
                         {/* service-details-area-end */}
                     </main>
-                    <Footer/>
+                    <Footer />
                 </div>
             </div>
         </div>
