@@ -23,18 +23,11 @@ const Header = () => {
                                                 <a href="/">Home</a>
                                             </li>
                                             <li>
-                                                <a href="#">Pages</a>
+                                                <a href="/about">About us</a>
                                                 <ul className="submenu">
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-details.html">Team Details</a></li>
-                                                    <li><a href="career.html">Career</a></li>
-                                                    <li><a href="career-details.html">Career Details</a></li>
-                                                    <li><a href="integrations.html">Integrations</a></li>
-                                                    <li><a href="price.html">Price</a></li>
-                                                    <li><a href="register.html">Register</a></li>
-                                                    <li><a href="sign-in.html">Signin</a></li>
-                                                    <li><a href="404.html">404</a></li>
+                                                    <li><a href="/about">Who we are</a></li>
+                                                    <li><a href="/team">Our Team</a></li>
+                                                    <li><a href="/partners">Partners</a></li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -48,33 +41,18 @@ const Header = () => {
                                                     <li><a href="/services">All services</a></li>
                                                 </ul>
                                             </li>
-                                            <li>
-                                                <a href="blog-details.html">Blog</a>
-                                                <ul className="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-list.html">Blog List</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                    <li><a href="blog-details-2.html">Blog Details 02</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="project-details.html">Portfoilo</a>
-                                                <ul className="submenu">
-                                                    <li><a href="project.html">Project</a></li>
-                                                    <li><a href="project-details.html">Project Details</a></li>
-                                                </ul>
-                                            </li>
                                             <li><a href="/contact">Contact</a></li>
+                                            <li><a href='/careers'>Careers</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-3 col-md-6 col-6">
+                            {/* <div className="col-xl-3 col-lg-3 col-md-6 col-6">
                                 <div className="tp-header-2__right d-flex align-items-center justify-content-end">
                                     <a className="tp-header-2__login d-none d-md-block" href="/careers">Careers</a>
                                     <a className="header-bottom__bar tp-menu-bar d-lg-none" href="javascript:void(0)"><i className="fal fa-bars" /></a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

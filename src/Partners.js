@@ -26,16 +26,10 @@ import ctabg from './img/cta/cta-bg.jpg'
 const Partners = () => {
     return (
         <div>
-            <button className="scroll-top scroll-to-target tp-style-green" data-target="html">
-                <i className="far fa-angle-double-up" />
-            </button>
-            {/* back-to-top-end  */}
             <Header />
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
-
-                        {/* breadcrumb-area-start */}
                         <div className="breadcrumb__area breadcrumb-height-2 breadcrumb-overlay p-relative fix" style={{background:`url(${bgimage})`}}>
                             <div className="container">
                                 <div className="row justify-content-center">
@@ -50,8 +44,7 @@ const Partners = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* breadcrumb-area-end */}
-                        {/*Portfolio Start*/}
+                        
                         <div className="portfolio-area pt-100 pb-90">
                             <div className="container">
                                 <div className="row grid">
@@ -65,7 +58,7 @@ const Partners = () => {
                                                             <img src={require(`./img/payment-logo/${bank.img}.png`)} alt="" style={{marginTop:'25px',height:'130px',width:'160px'}}/>
                                                         </div>
                                                         <div className="inner-project-content">
-                                                            <h4 className="inner-project-title"><a href="project-details.html">{bank.name}</a></h4>
+                                                            <h4 className="inner-project-title">{bank.name}</h4>
                                                             <p>Quis nostrud exercitation ullamco laboris
                                                                 nisi ut aliquip ex ea commodo.</p>
                                                         </div>
@@ -77,8 +70,7 @@ const Partners = () => {
                                 </div>
                             </div>
                         </div>
-                        {/*Portfolio End*/}
-                        {/* tp-cta-area-start */}
+                       
                         <div className="tp-cta-area p-relative">
                             <div className="tp-cta-grey-bg grey-bg-2" />
                             <div className="container">
@@ -96,7 +88,6 @@ const Partners = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* tp-cta-area-end */}
 
                         <Footer/>
                     </main>
