@@ -1,9 +1,35 @@
-import React, { useRef } from 'react'
+import React, { useRef ,useState,useEffect} from 'react'
 import emailjs from '@emailjs/browser';
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
-const Application = ({ role }) => {
+const Application = () => {
 
     const form = useRef();
+    let { id } = useParams();
+    console.log(id);
+
+    const [role,setRole] = useState(null);
+
+    useEffect(()=>{
+        async function getJob()
+        {
+            try
+            {
+                const response = await axios.get(`http://localhost:3001/job/${id}`);
+                const data = await response.data
+
+                console.log(data)
+                setRole(data.jobTitle);
+            }
+            catch(error)
+            {
+                console.log(error);
+            }
+        }
+
+        getJob();
+    },[])
 
     function handleSubmit(e) {
         e.preventDefault();

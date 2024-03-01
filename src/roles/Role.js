@@ -170,7 +170,7 @@ const Role = () => {
                                             </div> */}
                                         </div>
                                     </div>
-                                    <Application role={obj.jobTitle}/>
+                                    <Application/>
                                 </div>
                             </div>
                         </div>
