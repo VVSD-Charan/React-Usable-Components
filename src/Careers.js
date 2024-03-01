@@ -70,20 +70,7 @@ const Careers = () => {
                         </div>
                         {/* carrer-banner-area-end */}
                         {/* tp-job-area-start */}
-                        <div className="job-area pt-120 pb-120">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-xl-12">
-                                        <div className="job-section-box text-center mb-40">
-                                            <h3 className="tp-section-title">Open Positions</h3>
-                                            <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque tristique <br />
-                                                Et amet risus enim accumsan sit purus sit.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <Allroles/>
-                            </div>
-                        </div>
+                        <Allroles/>
                     </main>
                     <Footer />
                 </div>
