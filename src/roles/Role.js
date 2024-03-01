@@ -12,6 +12,8 @@ import breadshape2 from '../img/breadcrumb/breadcrumb-shape-2.png'
 import bread3 from '../img/breadcrumb/breadcrumb-3.png'
 import breadsub1 from '../img/breadcrumb/breadcrumb-sub-1.png'
 
+import ctabg from '../img/cta/cta-bg.jpg'
+
 const Role = () => {
     let { id } = useParams();
     const [obj,setObj] = useState({});
@@ -60,7 +62,7 @@ const Role = () => {
                                                 <span className="dvdr"><i className="fal fa-angle-right" /></span>
                                                 <span className="child-one"><a href="#">Careers page</a></span>
                                                 <span className="dvdr"><i className="fal fa-angle-right" /></span>
-                                                <span>Team Member</span>
+                                                <span>{obj.jobTitle}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +182,7 @@ const Role = () => {
                             </div>
                         </div>
                         {/* tp-job-area-start */}
-                        <div className="job-area pt-120 pb-120">
+                        <div className="job-area">
                             <div className="container">
                                 {/* <div className="row">
                                     <div className="col-xl-12">
@@ -201,7 +203,7 @@ const Role = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="tp-cta-bg" data-background="assets/img/cta/cta-bg.jpg">
+                                        <div className="tp-cta-bg" style={{backgroundImage:`url(${ctabg})`}}>
                                             <div className="tp-cta-content tp-inner-font text-center">
                                                 <h3 className="tp-section-title text-white">Try our service now!</h3>
                                                 <p>Eyerything you need to accept cord payments and grow your business <br />
