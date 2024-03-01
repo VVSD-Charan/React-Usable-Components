@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState,useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import Header from './commons/Header';
 import Footer from './commons/Footer';
 
@@ -8,17 +9,40 @@ import breadcrumbshape2 from './img/breadcrumb/breadcrumb-shape-2.png'
 
 // Importing contact images 
 import contactbanner from './img/contact/contact-banner.jpg'
+import ctabg from './img/cta/cta-bg.jpg'
 
-import {MdMail} from 'react-icons/md'
-import {FaPhoneAlt} from 'react-icons/fa'
-import {FaLocationDot} from 'react-icons/fa6'
+import { MdMail } from 'react-icons/md'
+import { FaPhoneAlt } from 'react-icons/fa'
+import { FaLocationDot } from 'react-icons/fa6'
 
 
 const Contact = () => {
+
+    const form = useRef();
+
+    function handleSubmit(e) {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_ozwo3sa', 'template_d1nsrps', form.current, {
+                publicKey: 'e3YmNJZW4Dt8vToN1',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    e.target.reset();
+                    alert("Message sent successfully")
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    }
+
     return (
         <div>
-            <Header/>
-           
+            <Header />
+
             <div id="smooth-wrapper">
                 <div id="smooth-content">
                     <main>
@@ -42,13 +66,12 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* tp-breadcrumb-area-end */}
-                        {/* tp-breadcrumb-header-area-start */}
+
                         <div className="about-img-area mb-100 z-index-3">
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="about-img about-img-height p-relative"  style={{background:`url(${contactbanner})`,backgroundRepeat:'no-repeat'}}>
+                                        <div className="about-img about-img-height p-relative" style={{ background: `url(${contactbanner})`, backgroundRepeat: 'no-repeat' }}>
                                             <div className="about-img-content">
                                                 <h4 className="about-img-title" data-parallax="{&quot;y&quot;: 1000, &quot;smoothness&quot;: 10}">
                                                     <span>Get In</span> <br />
@@ -60,53 +83,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* tp-breadcrumb-header-area-end */}
-                        {/* tp-contact-area-strat */}
-                        {/* <div className="contact-info-area pb-90">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-xl-4 col-lg-4 mb-30">
-                                        <div className="contact-info-item">
-                                            <div className="contact-info-img">
-                                                <img src="assets/img/contact/contact-icon-sm-5.png" alt="" />
-                                            </div>
-                                            <div className="contact-info-title-box">
-                                                <h5 className="contact-info-title-sm"><a href="#">Colombia</a></h5>
-                                                <p>Bogota D.C., Colombia, b. a 181 <br />
-                                                    C No. 930 Ap 202</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-4 col-lg-4 mb-30">
-                                        <div className="contact-info-item p-relative">
-                                            <div className="contact-info-badge">
-                                                <span>Main Office</span>
-                                            </div>
-                                            <div className="contact-info-img">
-                                                <img src="assets/img/contact/contact-icon-sm-6.png" alt="" />
-                                            </div>
-                                            <div className="contact-info-title-box">
-                                                <h5 className="contact-info-title-sm"><a href="#">France</a></h5>
-                                                <p>9 Pearse Street, Kinsale,Cork, <br />
-                                                    P17 AH66, Ireland</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-xl-4 col-lg-4 mb-30">
-                                        <div className="contact-info-item">
-                                            <div className="contact-info-img">
-                                                <img src="assets/img/contact/contact-icon-sm-7.png" alt="" />
-                                            </div>
-                                            <div className="contact-info-title-box">
-                                                <h5 className="contact-info-title-sm"><a href="#">Egypt</a></h5>
-                                                <p>Av. Cordoba 1309, 3'A, City of <br />
-                                                    Buenos Aires, Egypt</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+
                         <div className="contact-form-area pb-120">
                             <div className="container">
                                 <div className="row gx-0">
@@ -126,7 +103,7 @@ const Contact = () => {
                                                             </defs>
                                                         </svg>
                                                     </span>
-                                                    <br/>you.</h4>
+                                                    <br />you.</h4>
                                                 <p>While we're good with smoke signals,
                                                     there <br /> are easier ways to get in touch.</p>
                                             </div>
@@ -135,35 +112,41 @@ const Contact = () => {
                                     <div className="col-xl-7 col-lg-6">
                                         <div className="contact-form-right-warp">
                                             <div className="postbox__comment-form">
-                                                <form action="#" className="box">
+                                                <form ref={form} onSubmit={handleSubmit} className="box">
                                                     <div className="row gx-20">
                                                         <div className="col-12">
                                                             <div className="postbox__comment-input mb-30">
-                                                                <input type="text" className="inputText" required />
-                                                                <span className="floating-label">Full  Name</span>
+                                                                <input type="text" name='user_name' className="inputText" required />
+                                                                <span className="floating-label">Full Name</span>
                                                             </div>
                                                         </div>
                                                         <div className="col-12">
                                                             <div className="postbox__comment-input mb-30">
-                                                                <input type="text" className="inputText" required />
+                                                                <input type="email" name='user_email' className="inputText" required />
                                                                 <span className="floating-label">Your Email</span>
                                                             </div>
                                                         </div>
                                                         <div className="col-12">
                                                             <div className="postbox__comment-input mb-35">
-                                                                <input type="text" className="inputText" required />
+                                                                <input type="text" name='user_contact' className="inputText" required />
                                                                 <span className="floating-label">Phone Number</span>
                                                             </div>
                                                         </div>
                                                         <div className="col-xxl-12">
                                                             <div className="postbox__comment-input mb-30">
-                                                                <textarea className="textareaText" required defaultValue={""} />
+                                                                <textarea name='user_message' className="textareaText"  required />
                                                                 <span className="floating-label-2">Message...</span>
                                                             </div>
                                                         </div>
                                                         <div className="col-xxl-12">
+                                                            <div className="postbox__comment-input mb-30">
+                                                                <input name='user_file' className="inputText" type='text' required/>
+                                                                <span className="floating-label-2">Resume Link</span>
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-xxl-12">
                                                             <div className="postbox__btn-box">
-                                                                <button className="submit-btn w-100">Send your Request</button>
+                                                                <button type='submit' className="submit-btn w-100">Send your Request</button>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -192,7 +175,7 @@ const Contact = () => {
                                                     <img src="assets/img/contact/contact-icon-sm-1.png" alt="" />
                                                 </div>
                                                 <div className="contact-inner-link">
-                                                    <a href="mailto:ceo@busicon.co.in"><MdMail style={{fontSize:'23px'}}/>  ceo@busicon.co.in</a>
+                                                    <a href="mailto:ceo@busicon.co.in"><MdMail style={{ fontSize: '23px' }} />  ceo@busicon.co.in</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -202,7 +185,7 @@ const Contact = () => {
                                                     <img src="assets/img/contact/contact-icon-sm-2.png" alt="" />
                                                 </div>
                                                 <div className="contact-inner-link">
-                                                    <a href="tel:7658934523"><FaPhoneAlt/>  +91 7658934523</a>
+                                                    <a href="tel:7658934523"><FaPhoneAlt />  +91 7658934523</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -212,7 +195,7 @@ const Contact = () => {
                                                     <img src="assets/img/contact/contact-icon-sm-3.png" alt="" />
                                                 </div>
                                                 <div className="contact-inner-link">
-                                                    <a href="https://www.google.com.bd/maps/@23.7806365,90.4193257,12z" target="_blank"><FaLocationDot style={{fontSize:'20px'}}/> Siddipet , Telangana , India</a>
+                                                    <a href="https://www.google.com.bd/maps/@23.7806365,90.4193257,12z" target="_blank"><FaLocationDot style={{ fontSize: '20px' }} /> Siddipet , Telangana , India</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,19 +203,18 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* tp-contact-area-end */}
-                        {/* tp-cta-area-start */}
+
                         <div className="tp-cta-area p-relative">
                             <div className="tp-cta-grey-bg grey-bg-2" />
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12">
-                                        <div className="tp-cta-bg" data-background="assets/img/cta/cta-bg.jpg">
+                                        <div className="tp-cta-bg" style={{ background: `url(${ctabg})` }}>
                                             <div className="tp-cta-content tp-inner-font text-center">
                                                 <h3 className="tp-section-title text-white">Try our service now!</h3>
                                                 <p>Eyerything you need to accept cord payments and grow your business <br />
                                                     anywhere on the planet.</p>
-                                                <a className="tp-btn-inner white-bg text-black" href="service-details.html">Get Started Now</a>
+                                                <a className="tp-btn-inner white-bg text-black" href="/services">Try our services</a>
                                             </div>
                                         </div>
                                     </div>
@@ -243,7 +225,7 @@ const Contact = () => {
                     </main>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
