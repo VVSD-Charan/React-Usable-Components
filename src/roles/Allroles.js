@@ -41,13 +41,6 @@ const Allroles = () => {
                                 </div>
                                 <div className="col-lg-4 col-md-5">
                                     <div className="job-post-wrapper d-flex align-items-center">
-                                        <div className="job-post-time d-flex align-items-center">
-                                            <svg width={18} height={18} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9 16.75C13.2802 16.75 16.75 13.2802 16.75 9C16.75 4.71979 13.2802 1.25 9 1.25C4.71979 1.25 1.25 4.71979 1.25 9C1.25 13.2802 4.71979 16.75 9 16.75Z" stroke="#5F6168" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                                <path d="M9 5.7998V9.9998L11.8 11.3998" stroke="#5F6168" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                            </svg>
-                                            <span>{item.jobId}</span>
-                                        </div>
                                         <div className="job-post-location d-flex align-items-center">
                                             <svg width={16} height={18} viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 7.51463C1 3.9167 4.13401 1 8 1C11.866 1 15 3.9167 15 7.51463C15 11.0844 12.7658 15.2499 9.28007 16.7396C8.46748 17.0868 7.53252 17.0868 6.71993 16.7396C3.23416 15.2499 1 11.0844 1 7.51463Z" stroke="#5F6168" strokeWidth="1.5" />
@@ -59,7 +52,7 @@ const Allroles = () => {
                                 </div>
                                 <div className="col-lg-3 col-md-3">
                                     <div className="job-post-apply-btn text-start text-md-end">
-                                        <a className="tp-btn-inner tp-btn-hover alt-color-orange" href="career-details.html"><span>Apply</span> <b /></a>
+                                        <a className="tp-btn-inner tp-btn-hover alt-color-orange" href={`/job/${item.jobId}`}><span>Apply</span> <b /></a>
                                     </div>
                                 </div>
                             </div>
