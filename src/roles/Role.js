@@ -7,6 +7,11 @@ import Footer from '../commons/Footer';
 import Allroles from './Allroles';
 import Application from './Application';
 
+import breadshape1 from '../img/breadcrumb/breadcrumb-shape-1.png'
+import breadshape2 from '../img/breadcrumb/breadcrumb-shape-2.png'
+import bread3 from '../img/breadcrumb/breadcrumb-3.png'
+import breadsub1 from '../img/breadcrumb/breadcrumb-sub-1.png'
+
 const Role = () => {
     let { id } = useParams();
     const [obj,setObj] = useState({});
@@ -40,10 +45,10 @@ const Role = () => {
                         {/* breadcrumb-area-start */}
                         <div className="breadcrumb__area breadcrumb-height p-relative blue-bg-2">
                             <div className="breadcrumb__shape-1">
-                                <img src="assets/img/breadcrumb/breadcrumb-shape-1.png" alt="" />
+                                <img src={breadshape1} alt="" />
                             </div>
                             <div className="breadcrumb__shape-2">
-                                <img src="assets/img/breadcrumb/breadcrumb-shape-2.png" alt="" />
+                                <img src={breadshape2} alt="" />
                             </div>
                             <div className="container">
                                 <div className="row">
@@ -61,9 +66,9 @@ const Role = () => {
                                     </div>
                                     <div className="col-xl-4 col-lg-5 col-lg-4 text-center text-md-end">
                                         <div className="breadcrumb__img p-relative text-start z-index">
-                                            <img className="z-index-3" src="assets/img/breadcrumb/breadcrumb-3.png" alt="" />
+                                            <img className="z-index-3" src={bread3} alt="" />
                                             <div className="breadcrumb__sub-img wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".4s">
-                                                <img src="assets/img/breadcrumb/breadcrumb-sub-1.png" alt="" />
+                                                <img src={breadsub1} alt="" />
                                             </div>
                                         </div>
                                     </div>
@@ -100,7 +105,7 @@ const Role = () => {
                                                 {
                                                     obj?.jobDescription?.map((item,index)=>{
                                                         return (
-                                                            <li key={index}><i className="fal fa-long-arrow-right" /> {item}</li>
+                                                            <p key={index}><i className="fal fa-long-arrow-right" /> {item}</p>
                                                         )
                                                     })
                                                 }
@@ -110,7 +115,7 @@ const Role = () => {
                                                 {
                                                     obj?.jobRequired?.map((item,index)=>{
                                                         return (
-                                                            <li key={index}><i className="fal fa-long-arrow-right" /> {item}</li>
+                                                            <p key={index}><i className="fal fa-long-arrow-right" /> {item}</p>
                                                         )
                                                     })
                                                 }
