@@ -139,12 +139,6 @@ const Contact = () => {
                                                             </div>
                                                         </div>
                                                         <div className="col-xxl-12">
-                                                            <div className="postbox__comment-input mb-30">
-                                                                <input name='user_file' className="inputText" type='text' required/>
-                                                                <span className="floating-label-2">Resume Link</span>
-                                                            </div>
-                                                        </div>
-                                                        <div className="col-xxl-12">
                                                             <div className="postbox__btn-box">
                                                                 <button type='submit' className="submit-btn w-100">Send your Request</button>
                                                             </div>
