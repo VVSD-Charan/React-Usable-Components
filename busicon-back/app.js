@@ -54,6 +54,20 @@ app.get('/alljobs', async (req, res) => {
     }
 });
 
+app.get('/job/:id', async (req, res) => {
+  try {
+    const jobId = req.params.id;
+    const response = await schema.findOne({ jobId: jobId });
+
+    if (!response) {
+      return res.status(404).json({ error: 'Job not found' });
+    }
+    res.json(response);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
