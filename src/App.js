@@ -15,6 +15,7 @@ import Collaborations from './services/Collaborations.js';
 import Business from './services/Business.js';
 import Insurance from './services/Insurance.js';
 import Role from './roles/Role.js';
+import About from './About.js'
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
           <Route path="/team" element={<Team/>}/>
           <Route path="/partners" element={<Partners/>}/>
           <Route path="/job/:id" element={<Role />} />
+          <Route path="/about" element={<About/>} />
+
       </Routes>
     </BrowserRouter>
   );
