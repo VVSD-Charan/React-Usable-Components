@@ -105,13 +105,21 @@ const Role = () => {
                                             <div className="career-details-job-responsiblity mb-45">
                                                 <h4 className="career-details-title-sm">Job Description</h4>
                                                 {
-                                                    obj?.jobDescription? obj.jobDescription : null
+                                                    obj?.jobDescription?.map((item,index)=>{
+                                                        return (
+                                                            <p key={index}><i className="fal fa-long-arrow-right" /> {item}</p>
+                                                        )
+                                                    })
                                                 }
                                             </div>
                                             <div className="career-details-job-responsiblity mb-45">
                                                 <h4 className="career-details-title-sm">Job Requirements</h4>
                                                 {
-                                                    obj?.jobRequired? obj.jobRequired : null
+                                                    obj?.jobRequired?.map((item,index)=>{
+                                                        return (
+                                                            <p key={index}><i className="fal fa-long-arrow-right" /> {item}</p>
+                                                        )
+                                                    })
                                                 }
                                             </div>
                                             {/* <div className="career-details-job-responsiblity mb-45">

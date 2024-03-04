@@ -1,14 +1,14 @@
-const express = require('express');
-const app = express();
-const port = 3001;
-var uniqid = require('uniqid');
+const express = require('express')
+const app = express()
+const port = 3001
+var uniqid = require('uniqid')
 
 const cors = require('cors')
-app.use(cors());
+app.use(cors())
 
-const database = require('./database');
-const schema = require('./schema');
-const Job = require('./schema');
+const database = require('./database')
+const schema = require('./schema')
+const Job = require('./schema')
 
 // async function createJob(jobData) {
 //     try {
@@ -21,7 +21,7 @@ const Job = require('./schema');
 
 // const jobData = {
 //   jobId: uniqid(),
-//   jobDescription: ['Add animations to web pages.', 
+//   jobDescription: ['Add animations to web pages.',
 //       'Optimize API performance.',
 //       'Work with both SQL and NoSQL databases',
 //       'Work with cloud services like AWS, Azure',
@@ -51,47 +51,47 @@ const Job = require('./schema');
 
 app.get('/alljobs', async (req, res) => {
   try {
-    const response = await schema.find();
+    const response = await schema.find()
     console.log(response)
-    res.json(response);
+    res.json(response)
   } catch (error) {
-    console.error('Error fetching data:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('Error fetching data:', error)
+    res.status(500).json({ error: 'Internal server error' })
   }
-});
+})
 
 app.get('/job/:id', async (req, res) => {
   try {
-    const jobId = req.params.id;
-    const response = await schema.findOne({ jobId: jobId });
+    const jobId = req.params.id
+    const response = await schema.findOne({ jobId: jobId })
 
     if (!response) {
-      return res.status(404).json({ error: 'Job not found' });
+      return res.status(404).json({ error: 'Job not found' })
     }
-    res.json(response);
+    res.json(response)
   } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('Error:', error)
+    res.status(500).json({ error: 'Internal server error' })
   }
-});
+})
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+  console.log(`Server is running on port ${port}`)
+})
 
 app.post('/addjob', async (req, res) => {
   try {
-      const formData = {
-          jobId: uniqid(),
-          jobDescription: req.headers.jobdescription,
-          jobTitle: req.headers.jobtitle,
-          jobLocation: req.headers.joblocation,
-          jobRequired: req.headers.jobrequired
-      };
+    const formData = {
+      jobId: uniqid(),
+      jobDescription: req.headers.jobdescription,
+      jobTitle: req.headers.jobtitle,
+      jobLocation: req.headers.joblocation,
+      jobRequired: req.headers.jobrequired,
+    }
 
-      console.log(formData);
-      const job = await schema.create(formData);
-      console.log('Job created successfully:', job);
+    console.log(formData)
+    const job = await schema.create(formData)
+    console.log('Job created successfully:', job)
   } catch (error) {
-      console.error('Error creating job:', error);
+    console.error('Error creating job:', error)
   }
 })
