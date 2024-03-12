@@ -23,9 +23,15 @@ const Contact = () => {
     function handleSubmit(e) {
         e.preventDefault();
 
+        const service = process.env.REACT_APP_SERVICE_ID
+        const template = process.env.REACT_APP_TEMPLATE_ID
+        const publicKey = process.env.REACT_APP_PUBLIC_KEY
+
+        console.log(service + ' ' + template)
+
         emailjs
-            .sendForm('service_ozwo3sa', 'template_d1nsrps', form.current, {
-                publicKey: 'e3YmNJZW4Dt8vToN1',
+            .sendForm(service,template, form.current, {
+                publicKey: publicKey,
             })
             .then(
                 () => {
