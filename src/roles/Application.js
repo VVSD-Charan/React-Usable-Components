@@ -36,8 +36,8 @@ const Application = () => {
         console.log(form)
 
         emailjs
-            .sendForm('service_ozwo3sa', 'template_d8fv6ja', form.current, {
-                publicKey: 'e3YmNJZW4Dt8vToN1',
+            .sendForm(process.env.REACT_APP_CAREER_SERVICE_ID , process.env.REACT_APP_CAREER_TEMPLATE_ID , form.current, {
+                publicKey: process.env.REACT_APP_CAREER_PUBLIC_KEY ,
             })
             .then(
                 () => {
