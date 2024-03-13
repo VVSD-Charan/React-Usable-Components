@@ -13,6 +13,7 @@ import Insurance from './services/Insurance.js'
 import Role from './roles/Role.js'
 import About from './About.js'
 import AddJob from './AddJob.js'
+import Admin from './Admin.js'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/job/:id" element={<Role />} />
         <Route path="/about" element={<About />} />
         <Route path="/test" element={<AddJob />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )

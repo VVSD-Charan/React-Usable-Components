@@ -10,49 +10,33 @@ const database = require('./database')
 const schema = require('./schema')
 const Job = require('./schema')
 
-// async function createJob(jobData) {
-//     try {
-//       const job = await schema.create(jobData);
-//       console.log('Job created successfully:', job);
-//     } catch (error) {
-//       console.error('Error creating job:', error);
-//     }
-//   }
+async function createJob(jobData) {
+    try {
+      const job = await schema.create(jobData);
+      console.log('Job created successfully:', job);
+    } catch (error) {
+      console.error('Error creating job:', error);
+    }
+  }
 
-// const jobData = {
-//   jobId: uniqid(),
-//   jobDescription: ['Add animations to web pages.',
-//       'Optimize API performance.',
-//       'Work with both SQL and NoSQL databases',
-//       'Work with cloud services like AWS, Azure',
-//       'Make pages responsive for all screens.',
-//       'Ensure code re-usability.',
-//       'Make responsive web pages using React.',
-//       'Knowledge of Material UI is a plus.'
-//   ],
-//   jobTitle: 'Full Stack Developer Intern',
-//   jobLocation: 'Siddipet',
-//   jobRequired : [
-//       'Good knowledge of JavaScript and React life cycle .',
-//       'Good communication skills and knowlede about SDLC',
-//       'Should be good in using JavaScript DOM',
-//       'Good problem solving skills',
-//       'Proficient in atleast one programming language like C/C++/Python',
-//       'Past internship / work experience is a plus.'
-//   ]
-// };
+const jobData = {
+  jobId: uniqid(),
+  jobDescription: 'We are seeking a skilled and passionate Frontend Developer to join our team. In this role, you will be responsible for creating engaging and intuitive user experiences on our web applications. You will collaborate closely with our design and backend teams to implement user interfaces that meet both functional and aesthetic requirements. The ideal candidate will have a strong understanding of frontend technologies and frameworks, with a keen eye for detail and a passion for creating seamless user experiences.',
+  jobTitle: 'Full Stack Developer Intern',
+  jobLocation: 'Siddipet',
+  jobRequired : `The successful candidate should possess a Bachelor's degree in Computer Science or a related field, or equivalent practical experience. You should have a solid understanding of HTML, CSS, and JavaScript, with proficiency in at least one modern frontend framework such as React, Vue.js, or Angular. Experience with responsive design techniques and cross-browser compatibility is essential. Strong problem-solving skills and the ability to work efficiently both independently and in a team environment are crucial. Additionally, familiarity with version control systems such as Git and experience with testing frameworks like Jest or Jasmine would be advantageous. Overall, we are looking for someone who is enthusiastic about frontend development and eager to contribute to our dynamic and collaborative team.`
+};
 
-// database.on('error', console.error.bind(console, 'MongoDB connection error:'));
-// database.once('open', async () => {
-//   console.log('Connected to MongoDB');
+database.on('error', console.error.bind(console, 'MongoDB connection error:'));
+database.once('open', async () => {
+  console.log('Connected to MongoDB');
 
-//   await createJob(jobData);
-// });
+  await createJob(jobData);
+});
 
 app.get('/alljobs', async (req, res) => {
   try {
     const response = await schema.find()
-    console.log(response)
     res.json(response)
   } catch (error) {
     console.error('Error fetching data:', error)
@@ -94,4 +78,18 @@ app.post('/addjob', async (req, res) => {
   } catch (error) {
     console.error('Error creating job:', error)
   }
+})
+
+
+app.delete('/deletejob/:id',async (req,res)=>{
+   try
+   {
+      const jobId = req.params.id;
+      const deleted = await schema.deleteOne({jobId : jobId});
+      res.sendStatus(200);
+   }
+   catch(error)
+   {
+      console.log("Failed to delete job ", error);
+   }
 })
