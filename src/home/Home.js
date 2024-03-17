@@ -710,19 +710,19 @@ const Home = () => {
                           data-purecounter-end={35}
                           className="purecounter"
                         >
-                          35
+                          5
                         </span>
                         <p>Active Users</p>
                       </div>
                       <div className="tp-service-2__user">
                         <span>
-                          240<i>+</i>
+                          20<i>+</i>
                         </span>
                         <p>Trusted Companies</p>
                       </div>
                       <div className="tp-service-2__user">
                         <span>
-                          78<i>k</i>
+                          1<i>k</i>
                         </span>
                         <p>Customer care</p>
                       </div>
