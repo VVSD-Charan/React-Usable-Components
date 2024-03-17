@@ -102,7 +102,7 @@ const Footer = () => {
                             />
                           </svg>
                         </span>
-                        <a href="mailto:ceo@busicon.co.in">ceo@busicon.co.in</a>
+                        <a href="mailto:ceo@busicon.co.in">bcs@busicon.co.in</a>
                       </li>
                     </ul>
                   </div>
@@ -178,7 +178,7 @@ const Footer = () => {
                   <a href="#">
                     <i className="fab fa-vimeo-v" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/lonoindia?igsh=YTd6Yjg0Y3RhNjd4&utm_source=qr">
                     <i className="fab fa-instagram" />
                   </a>
                 </div>
