@@ -29,8 +29,6 @@ const AddJob = () => {
         config
       )
 
-      console.log(resp)
-
       if (resp.status === 201) {
         setPopupMessage('Job created successfully')
       } else {

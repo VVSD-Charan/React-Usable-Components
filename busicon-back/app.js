@@ -54,7 +54,6 @@ app.post('/addjob', async (req, res) => {
       jobRequired: req.headers.jobrequired,
     }
 
-    console.log(formData)
     const job = await schema.create(formData)
     console.log('Job created successfully:', job)
     res.status(201).json({ message: 'Job created successfully', job })

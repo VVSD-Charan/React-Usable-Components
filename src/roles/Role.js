@@ -23,8 +23,6 @@ const Role = () => {
       try {
         const response = await axios.get(`http://localhost:3001/job/${id}`)
         const data = await response.data
-
-        console.log(data)
         setObj(data)
       } catch (error) {
         console.log(error)

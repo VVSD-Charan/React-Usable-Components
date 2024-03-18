@@ -27,10 +27,8 @@ const Admin = () => {
       const response = await axios.delete(
         `http://localhost:3001/deletejob/${jobId}`
       )
-      console.log(response.status)
       setDeleteStatus('Job deleted successfully')
     } catch (error) {
-      console.log('Error occurred while deleting job ', error)
       setDeleteStatus('Failed to delete job')
     }
   }
