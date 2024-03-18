@@ -31,8 +31,8 @@ function App() {
         <Route path="/partners" element={<Partners />} />
         <Route path="/job/:id" element={<Role />} />
         <Route path="/about" element={<About />} />
-        <Route path="/test" element={<AddJob />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/addjob" element={<AddJob />} />
+        <Route path="/deletejob" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )

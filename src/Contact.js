@@ -25,15 +25,12 @@ const Contact = () => {
     const template = process.env.REACT_APP_TEMPLATE_ID
     const publicKey = process.env.REACT_APP_PUBLIC_KEY
 
-    console.log(service + ' ' + template)
-
     emailjs
       .sendForm(service, template, form.current, {
         publicKey: publicKey,
       })
       .then(
         () => {
-          console.log('SUCCESS!')
           e.target.reset()
           alert('Message sent successfully')
         },
