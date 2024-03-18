@@ -175,8 +175,8 @@ const Footer = () => {
                   <a href="#">
                     <i className="fab fa-twitter" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-vimeo-v" />
+                  <a href="https://wa.me/message/TLNLNHWFABD5B1">
+                    <i className="fab fa-whatsapp" />
                   </a>
                   <a href="https://www.instagram.com/lonoindia?igsh=YTd6Yjg0Y3RhNjd4&utm_source=qr">
                     <i className="fab fa-instagram" />
